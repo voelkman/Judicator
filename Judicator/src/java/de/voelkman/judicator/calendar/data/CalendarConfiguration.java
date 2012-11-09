@@ -6,6 +6,7 @@
  */
 package de.voelkman.judicator.calendar.data;
 
+import de.voelkman.utils.MathFunction;
 import java.awt.Color;
 import java.util.*;
 
@@ -13,19 +14,21 @@ public class CalendarConfiguration {
 
     // private static final Logger log =
     // LoggerFactory.getLogger(CalendarTable.class);
-    public static enum MonthDayModes {
-        
+    public enum MonthDayModes {
+
         cut, wrap
     };
-    
-    
-    
+
+    public enum LeapYearCollisionPolicy {
+
+        XOR, OR
+    };
     HashMap<String, Integer> months = null;
+    ArrayList<Integer> leapYearConfig = new ArrayList<Integer>();
+    LeapYearCollisionPolicy leapYearCollisionPolicy = LeapYearCollisionPolicy.XOR;
     MonthDayModes monthDayMode = MonthDayModes.wrap;
-    
     ArrayList<Moon> moons = null;
     ArrayList<Constellation> constellations = null;
-    
     ArrayList<CalendarDerivation> derivations = null;
     ArrayList<String> days = null;
     ArrayList<Day> specialDays = new ArrayList<Day>();
@@ -33,29 +36,27 @@ public class CalendarConfiguration {
     int mykradorianCorrectionInDays = 0;
     // Temporal results
     int maxDaysPerMonth = 0;
-    int daysInYear = 0;
-    
+    double daysInYear = 0;
+
     public ArrayList<Day> getSpecialDays() {
         return specialDays;
     }
-    
-   
-    
+
     public ArrayList<Day> getSpecialDaysNotNull() {
         if (specialDays == null) {
             this.specialDays = new ArrayList<Day>();
         }
         return specialDays;
     }
-    
+
     public void setSpecialDays(ArrayList<Day> specialDays) {
         this.specialDays = specialDays;
     }
-    
+
     public ArrayList<Day> getAnualDays() {
         return anualDays;
     }
-    
+
     public void setAnualDays(ArrayList<Day> anualDays) {
         this.anualDays = anualDays;
     }
@@ -81,7 +82,7 @@ public class CalendarConfiguration {
             moons.add(m);
         }
     }
-    
+
     public void setConstellation(String[][] constellationconfig) {
         if (constellations == null) {
             constellations = new ArrayList<Constellation>();
@@ -96,9 +97,9 @@ public class CalendarConfiguration {
             m.setOffsetInDays(Double.parseDouble(constellationconfig[i][3]));
             constellations.add(m);
         }
-        
+
     }
-    
+
     public void setMonths(String[][] months) {
         daysInYear = 0;
         maxDaysPerMonth = 0;
@@ -110,24 +111,24 @@ public class CalendarConfiguration {
             maxDaysPerMonth = Math.max(maxDaysPerMonth, val);
         }
     }
-    
+
     public void setDerivations(ArrayList<CalendarDerivation> derivations) {
         this.derivations = derivations;
     }
-    
+
     public void setDays(String[] dayNamesOfWeek) {
         this.days = new ArrayList<String>();
         this.days.addAll(Arrays.asList(dayNamesOfWeek));
     }
-    
+
     public void setMykradorianCorrectionInDays(String mykradorianCorrectionInDays) {
         this.mykradorianCorrectionInDays = Integer.parseInt(mykradorianCorrectionInDays);
     }
-    
+
     public ArrayList<Moon> getMoonObjects() {
         return moons;
     }
-    
+
     public String[][] getMoons() {
         if (moons == null) {
             return null;
@@ -145,11 +146,11 @@ public class CalendarConfiguration {
         }
         return result;
     }
-    
+
     public ArrayList<Constellation> getConstellationObjects() {
         return constellations;
     }
-    
+
     public String[][] getConstellation() {
         if (constellations == null) {
             return null;
@@ -161,16 +162,16 @@ public class CalendarConfiguration {
             result[count][1] = Double.toString(m.getRevolutionInDays());
             result[count][2] = Double.toString(m.getExtremeInDays());
             result[count][3] = Double.toString(m.getOffsetInDays());
-            
+
             count++;
         }
         return result;
     }
-    
+
     public MoonConjunction getNextMoonConjunction(int currentday, int threshold) {
         double[][] pairConjunctionPeriods = new double[moons.size()][moons.size()];
         double[][] pairConjunctionstartoffs = new double[moons.size()][moons.size()];
-        
+
         for (int i = 0; i < moons.size(); i++) {
             for (int j = 0; j < moons.size(); j++) {
                 double x = moons.get(i).getRevolutionInDays();
@@ -183,7 +184,7 @@ public class CalendarConfiguration {
                 pairConjunctionstartoffs[i][j] = moons.get(i).getOffset() - moons.get(j).getOffset();
             }
         }
-        
+
         MoonConjunction mc = new MoonConjunction();
         int daysToCome = currentday + 38800000;
         double tolerance = 1;
@@ -229,11 +230,11 @@ public class CalendarConfiguration {
         }
         return mc;
     }
-    
+
     public HashMap<String, Integer> getMonthsAsMap() {
         return months;
     }
-    
+
     public String[][] getMonths() {
         if (months == null) {
             return null;
@@ -247,25 +248,25 @@ public class CalendarConfiguration {
         }
         return result;
     }
-    
+
     public ArrayList<String> getDaysAsList() {
         return days;
     }
-    
+
     public String[] getDays() {
         return days.toArray(new String[days.size()]);
     }
-    
+
     public int getMykradorianCorrection() {
         return mykradorianCorrectionInDays;
     }
-    
+
     public String getMykradorianCorrectionInDays() {
         return Integer.toString(mykradorianCorrectionInDays);
     }
-    
+
     public int getAbsoluteDay(int year, int month, int day) {
-        int result = year * daysInYear + getMykradorianCorrection();
+        int result = (int)(year * daysInYear) + getMykradorianCorrection();
         Iterator<Integer> it = months.values().iterator();
         int count = 0;
         while (it.hasNext() && count < month) {
@@ -284,8 +285,8 @@ public class CalendarConfiguration {
      */
     public int[] getSplittedDate(int absoluteDays) {
         int[] result = new int[3];
-        result[0] = ((absoluteDays - getMykradorianCorrection()) / daysInYear);
-        int d = ((absoluteDays - getMykradorianCorrection()) % daysInYear);
+        result[0] = (int)((absoluteDays - getMykradorianCorrection()) / daysInYear);
+        int d = (int)((absoluteDays - getMykradorianCorrection()) % daysInYear);
         Iterator<Integer> it = months.values().iterator();
         int count = 0;
         while (it.hasNext() && d >= 0) {
@@ -301,17 +302,17 @@ public class CalendarConfiguration {
         }
         return result;
     }
-    
+
     public int getMaxDaysPerMonth() {
         return maxDaysPerMonth;
     }
-    
+
     public int getFirstDayOfWeekInMonth(int year, int month) {
         // Calc differece per year.
         if (MonthDayModes.wrap.equals(monthDayMode)) {
             Integer[] xx = months.values().toArray(new Integer[months.size()]);
             int deltaMonth = 0;
-            int deltaYear = (year * (daysInYear)) % getDaysAsList().size();
+            int deltaYear = (int)(year * (daysInYear)) % getDaysAsList().size();
             for (int i = 0; i < Math.min(month, xx.length); i++) {
                 deltaMonth += xx[i];
             }
@@ -321,36 +322,69 @@ public class CalendarConfiguration {
             return 0;
         }
     }
-    
+
     public int getDayOfWeek(int[] date) {
         return (getFirstDayOfWeekInMonth(date[0], date[1]) + date[2]) % days.size();
     }
-    
+
     public int getDayOfWeek(int absoluteDays) {
         return getDayOfWeek(getSplittedDate(absoluteDays));
     }
-    
+
     public MonthDayModes getMode() {
         return monthDayMode;
     }
-    
+
     public String getMonthDayMode() {
         return monthDayMode.toString();
     }
-    
+
     public void setMonthDayMode(String monthDayMode) {
         this.monthDayMode = MonthDayModes.valueOf(monthDayMode);
     }
-    
+
     public ArrayList<CalendarDerivation> getDerivations() {
         return derivations;
     }
-    
+
     public int getSeason(int d) {
-        return ((((d - (mykradorianCorrectionInDays % daysInYear)) + daysInYear / 8) % daysInYear) * 4) / daysInYear;
+        return (int)(((((d - (mykradorianCorrectionInDays % daysInYear)) + daysInYear / 8) % daysInYear) * 4) / daysInYear);
+    }
+
+    public double getDaysInYear() {
+        return daysInYear;
+    }
+
+    private boolean isLeapYear(double jahr) {
+        boolean result = false;
+        for (int i : leapYearConfig) {
+            if (jahr % i == 0) {
+                switch (leapYearCollisionPolicy) {
+                    case XOR: {
+                        result = !result;
+                        break;
+                    }
+                    case OR:
+                        break;
+                }
+            }
+        }
+        return result;
     }
     
-    public int getDaysInYear() {
-        return daysInYear;
+        private double getLeapYearFactor() {
+        //calculate  Leaps
+        int kgv = 1;
+        int count = 0;
+        for (Integer i : leapYearConfig) {
+            kgv = MathFunction.LCM(kgv, i);
+        }
+
+        for (int i = 0; i < kgv; i++) {
+            if (isLeapYear(i)) {
+                count++;
+            }
+        }
+        return ((double) count) / kgv;
     }
 }
