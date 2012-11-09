@@ -1,0 +1,675 @@
+# Ravaged Ruins
+#
+# Ravaged Ruins Random tables from
+# the Judges Guild / Necromancer Games
+# Wilderlands of High Fantasy Box Set
+#
+# Copyright 2005
+#
+
+:Start
+1,[CLASS]<br>[CONDITION], In a [STATE] State<br>Guarded by [KEEPER] 
+
+:CLASS
+1,Ruins of a [RUINS]
+2,An Ancient Relic of [RELICS]
+3,The Remains of [REMAINS]
+4,The Vestiges of [VESTIGES]
+5,The Remnants of [REMNANTS]
+6,Refuse Consisting of [REFUSE]
+7,The Wreckage of [WRECKS]
+8,The Skeletons of [SKELETONS]
+9,An Antique [ANTIQUES]
+10,An Artifact Used as [ARTIFACTS]
+
+:CONDITION
+1,Partially Covered in [COVERING]
+2,Fully Covered in [COVERING]
+3,Lying Above Ground
+4,Lying on a Rocky Slope
+5,Lying Inside a Cave
+6,Lying In a Crevice
+7,Lying Beneath an Overhang
+8,Lying Inside a Large Crater
+9,Lying Partially Sunken in [COVERING]
+10,Charred & Burnt
+
+:COVERING
+1,Sand
+2,Ashes
+3,Cinders
+4,Earth
+5,Thicket
+6,Mold
+7,Slime
+8,Rocks
+9,Webs & Dust
+10,Vines
+
+:STATE
+1,Crumbled & Decayed
+2,Disfigured & Defaced
+3,Wormeaten
+4,Crystallized & Petrified
+5,Corroded & Eroded
+6,Collapsed & Tumbled
+7,Moldy & Contaminated
+8,Dangerously Operational
+9,Partially Operational
+10,Fully Operational
+
+:KEEPER
+1,Mechanical Device
+2,Giant Types
+3,Dragon Class
+4,Undead Types
+5,Lycanthropes
+6,True Giants
+7,Animals
+8,Insects
+9,Trap
+10,Nothing
+
+:RUINS
+1,[MANOR]
+2,Village, consisting of [VILLAGE]
+3,City, consisting of [CITY]
+4,Citadel, consisting of [CITADEL]
+5,Castle, consisting of [CASTLE]
+6,[TEMPLE]
+
+:MANOR
+1,Hut
+2,Hovel
+3,Hall
+4,Villa
+5,Cottage
+6,Palace
+
+:VILLAGE
+1,{2d6} Huts
+2,{4d6} Hovels
+3,{6d6} Cottages
+4,{6d6} Cottages and Ditch
+5,{6d6} Cottages and Pallisade
+6,{6d6} Cottages w/ Pallisade & Moat
+
+:CITY
+1,{7d6} Huts and [CITADEL]
+2,{8d6} Houses
+3,{9d6} Houses & Wall
+4,{9d6} Houses, Wall,{1d3} [CITADEL]
+5,{20d6} Houses
+6,{20d6} Houses & {1d4} [TEMPLE]
+
+:CITADEL
+1,Tower
+2,Tower & Wall
+3,Great Keep
+4,Keep & 4 Towers
+5,Keep & 4 Towers & Wall
+6,Keep & 4 Towers & Wall w/ Moat
+
+:CASTLE
+1,Keep & Pallisade
+2,Keep & Pallidade w/ Moat
+3,Keep & Pallisade w/ Walls & Moat
+4,Keep & Pallisade w/ Walls & Moat & Manor House
+5,Keep w/ 4 Towers & Pallisade w/ Walls & Manor House
+6,Keep w/ 4 Towers & Pallisade w/ Walls & Moat & Manor House
+
+:TEMPLE
+1,Altar
+2,Shrine
+3,Sanctuary
+4,Oracle
+5,Pantheon
+6,Monastery
+
+:RELICS
+1,[TOOLS]
+2,[MACHINES]
+3,[TOMBS]
+4,[ARMOR]
+5,[WEAPONS]
+6,[CONTAINERS]
+
+:TOOLS
+1,a Ladder
+2,a Plow
+3,a Pick
+4,a Hoe
+5,an Anvil
+6,an Axe
+
+:MACHINES
+1,a Loom
+2,a Grinding Wheel
+3,a Clock
+4,a Balance
+5,a Potter's Wheel
+6,a Press
+
+:TOMBS
+1,a Grave
+2,a Sepulcher
+3,a Mausoleum
+4,a Catacombs
+5,a Vault
+6,a Crypt
+
+:ARMOR
+1,a Breastplate
+2,a Pair of Greaves
+3,a Pair of Gauntlets
+4,a Helmet
+5,a Chainmail
+6,a Shield
+
+:WEAPONS
+1,a Dagger
+2,a Scimitar
+3,a Hand Axe
+4,a Spear
+5,a Trident
+6,a Battleaxe
+
+:CONTAINERS
+1,Barrels
+2,Urns
+3,Trunks
+4,Jars
+5,Bottles
+6,Boxes
+
+:REMAINS
+1,[UTENSILS]
+2,[APPAREL]
+3,[HARNESS]
+4,[TOYS]
+5,[OPTICS]
+6,[TOME]
+
+:UTENSILS
+1,an Eating Utensil
+2,a Digging Tool
+3,a Writing Instrument
+4,a Navigating Instrument
+5,a Measuring Instrument
+6,a Musical Instrument
+
+:APPAREL
+1,a Haubrek
+2,a Pair of Boots
+3,a Cloak
+4,a Tunic
+5,a Mask
+6,a Pair of Breeches
+
+:HARNESS
+1,a Harness of a Swimmer
+2,a Harness of a Flyer
+3,a Harness of a Giant Animal
+4,a Harness of a Small Animal
+5,a Harness of a Medium-size Animal
+6,a Harness of a Colossal Animal
+
+:TOYS
+1,a Doll
+2,a Toy Vehicle
+3,a Toy Weapon
+4,a Toy Tool
+5,a Game
+6,a Toy House
+
+:OPTICS
+1,a Monocle
+2,a Pair of Spectacles
+3,a Spyglass
+4,a Mirror
+5,a Colored Pane of Glass
+6,a Periscope
+
+:TOME
+1,a Lexicon
+2,a Scroll
+3,a Manual
+4,a Tablet
+5,a Book
+6,a Codex
+
+:VESTIGES
+1,[PYRAMID]
+2,[MOUND]
+3,[FOUNTAIN]
+4,[TOTEM]
+5,[SEWERS]
+6,[MONOLITH]
+
+:PYRAMID
+1-66,a Stepped Sided Pyramid Used as a [PYRAMID_TYPE]
+67-100,a Flat Sided Pyramd Used as a [PYRAMID_TYPE]
+
+:PYRAMID_TYPE
+1,Burial Tomb
+2,Temple
+3,Observatory
+4,Palace
+
+:MOUND
+1,a Sacrifical Mound
+2,a Burial Mound
+3,a Treasure Mound
+4,a Lair
+5,a Sacred Mound
+6,a Polymorphed Mound
+
+:FOUNTAIN
+1,a Giant Fountain
+2,a Statued Fountain
+3,a Miniature Fountain
+4,a Geometric Fountain
+5,a Wishing Fountain
+6,a Spraying Fountain
+
+:TOTEM
+1,a Totem to a Mammal
+2,a Totem to a Human
+3,a Totem to a God
+4,a Totem to a Monster
+5,a Totem to a Bird
+6,a Totem to a Snake
+
+:SEWERS
+1,a 1' Square, Open Sewer
+2,a 2' Square, Open Sewer
+3,a 1' Square, Closed Sewer
+4,a 2' Square, Closed Sewer
+5,a 4' Square, Closed Sewer
+6,a 8' Square, Closed Sewer
+
+:MONOLITH
+1,a Column Monolith
+2,a Hewn Statue Monolith
+3,a Minaret Monolith
+4,an Oblesik Monolith
+5,an Effigy Monolith
+6,a Monument Monolith
+
+:REMNANTS
+1,[ROAD]
+2,[TOMBSTONE]
+3,[SIGNPOST]
+4,[CHANNEL]
+5,[MASONRY]
+6,[BRIDGE]
+7,[EDIFICE]
+8,[WORKS]
+9,[STRUCTURE]
+10,[WALL]
+
+:ROAD
+1,a Track
+2,a Trail
+3,a Gravel Road
+4,a Roman Paved Road
+5,a Asphalt Road
+6,a Concrete Road
+
+:TOMBSTONE
+1,a Plaque Marking a Burial Site
+2,a Cairn
+3,a Staff Marking a Burial Site
+4,a Beacon Marking a Burial Site
+5,a Pyre Marking a Burial Site
+6,a Stone Pile Marking a Burial Site
+
+:SIGNPOST
+1,a Guide Signpost
+2,a Omen Signpost
+3,a Trade Signpost
+4,a Warning Signpost
+5,a Emblem Signpost
+6,a Boundary Signpost
+
+:CHANNEL
+1,a Tunnel
+2,a Water Pipe
+3,a Well
+4,a Passage
+5,a Canal
+6,a Aqueduct
+
+:MASONRY
+1,Mud Bricks
+2,Stone Bricks
+3,Marble Blocks
+4,Plaster
+5,Wattle
+6,Stone Blocks
+
+:BRIDGE
+1,a Rope Bridge
+2,a Wood Bridge
+3,a Stone Bridge
+4,a Earth Bridge
+5,a Natural Bridge
+6,a Brick Bridge
+
+:EDIFICE
+1,a Carved Cliff
+2,a Sculptured Mound
+3,a Colossal Statue
+4,a Palace
+5,a Mill
+6,a Calendar Stone
+
+:WORKS
+1,an Arsenal
+2,a Granery
+3,a Paved Plaza
+4,a Viaduct
+5,a Reservoir
+6,a Cistern
+
+:STRUCTURE
+1,a Stairway
+2,a Ramp
+3,a Shaft
+4,a Spire
+5,a Roof
+6,a Tunnel
+
+:WALL
+1,a Stockade
+2,a Barricade
+3,a Fence
+4,a Rampart
+5,a Dike
+6,a Partition
+
+:REFUSE
+1,[OFFAL]
+2,[SEWAGE]
+3,[PARTS]
+4,[DISCARDS]
+5,[FOOD]
+6,[FUEL]
+
+:OFFAL
+1,Viscera
+2,Bones
+3,Gore
+4,Gristle
+5,Fat
+6,Talons
+
+:SEWAGE
+1,Soap
+2,Body Wastes
+3,Oils
+4,Slop
+5,Chemicals
+6,Lint
+
+:PARTS
+1,a Buckle
+2,Lacing
+3,a Crossbar
+4,Pommels
+5,an Arrowhead
+6,a Spike
+
+:DISCARDS
+1,Leather Scraps
+2,Papyrus Scraps
+3,a Handle
+4,a Shield Boss
+5,a Pole
+6,Linen Scraps
+
+:FOOD
+1,Fat
+2,Fruit
+3,Seeds
+4,Vegetables
+5,Minerals
+6,Meat
+
+:FUEL
+1,Wood
+2,Coal
+3,Peat
+4,Dung
+5,Petroleum
+6,Wax
+
+:WRECKS
+1,[SEA_VEHICLE]
+2,[LAND_VEHICLE]
+3,[AIR_VEHICLE]
+4,[WAR_ENGINE]
+5,[SUBMARINE]
+6,[SUBTERRANEAN]
+
+:SEA_VEHICLE
+1,a Raft
+2,a Canoe
+3,a Pig Bladder
+4,a Longboat
+5,a Merchant Ship
+6,a Man O' War
+
+:LAND_VEHICLE
+1,a Sledge
+2,a Wagon
+3,a Litter
+4,a Carriage
+5,a Wain
+6,a Chariot
+
+:AIR_VEHICLE
+1,a Ballon
+2,a Pair of Flying Wings
+3,a Hang-Glider
+4,a Parachute
+5,a Roc Carriage
+6,[UNUSUAL_AIR]
+
+:WAR_ENGINE
+1,an Onager
+2,a Screw
+3,a Battering Ram
+4,a Siege Tower
+5,a Springal
+6,a Trebuchet
+
+:SUBMARINE
+1,a Dolphin Sled
+2,a Seahorse Carriage
+3,a Giant Turtle House
+4,a Diving Bell
+5,a Pocket Submarine
+6,a Nuclear Submarine
+
+:SUBTERRANEAN
+1,a Mole Sled
+2,a Rock Borer
+3,a Mine Cart
+4,a Earth Borer
+5,a Worm Saddle
+6,a Rat Chariot
+
+:UNUSUAL_AIR
+1,a Prop Driven Aircraft
+2,Jet Aircraft
+3,Re-Entry Capsule
+4,Spacecraft
+5,Helicopter
+6,Anti-Grav Sled
+
+:SKELETONS
+1,[SMALL]
+2,[MEDIUM]
+3,[LARGE_HUGE]
+4,[UNUSUAL]
+5,[SKULLS]
+6,[GARG_COLOSSAL]
+
+:SMALL
+1,a Miniscule
+2,a Halfling
+3,a Goblin
+4,a Pixie
+5,a Gnome
+6,a Kobold
+
+:MEDIUM
+1,a Human
+2,an Elf
+3,a Orc
+4,a Dwarf
+5,a Lizard Man
+6,a Hobgoblin
+
+:LARGE_HUGE
+1,an Ogre
+2,a Troll
+3,a True Giant
+4,a Dinosaur
+5,a Sea Monster
+6,a Whale
+
+:UNUSUAL
+1,a Cubic Creature
+2,a Crystalline Creature
+3,a Multi-limbed Creature
+4,a Multi-headed Creature
+5,a Winged Creature
+6,an Armor-plated Creature
+
+:SKULLS
+1,[SMALL] Skull
+2,[MEDIUM] Skull
+3,[LARGE_HUGE] Skull
+4,[GARG_COLOSSAL] Skull
+5,a Multi-horned Skull
+6,a Multi-socketed Skull
+
+:GARG_COLOSSAL
+1,a Gargantuan/Colossal Humanoid Creature
+2,a Gargantuan/Colossal Avian Creature
+3,a Gargantuan/Colossal Reptilian Creature
+4,a Gargantuan/Colossal Ursoid Creature
+5,a Gargantuan/Colossal Amphibian Creature
+6,a Gargantuan/Colossal Crustacean Creature
+
+:ANTIQUES
+1,[STATUES]
+2,[FURNITURE]
+3,[ENGRAVINGS]
+4,[IDOLS]
+5,[FITTINGS]
+6,[HANDICRAFT]
+
+:STATUES
+1,Miniature Statue
+2,Half Size Statue
+3,Life Size Statue
+4,Giant Size Statue
+5,Abstract Statue
+6,Magical Statue
+
+:FURNITURE
+1,Throne
+2,Chest
+3,Giant Size Piece of Furniture
+4,Miniature Piece of Furniture
+5,Stone Seat
+6,Stone Table
+
+:ENGRAVINGS
+1,Engraving of a Battle Scene
+2,Engraving of a Coronation
+3,Engraving of a Punishment Scene
+4,Engraving of a Religious Scene
+5,Engraving of a Romantic Scene
+6,Engraving of a Curse
+
+:IDOLS
+1,{1d20} Foot tall Stone Idol
+2,{1d20} Foot tall Plaster Idol
+3,{1d20} Foot tall Metal Idol
+4,{1d20} Foot tall Wooden Idol
+
+:FITTINGS
+1,Faucet
+2,Lamp
+3,Bell
+4,Fresco
+5,Pair of Hinges
+6,Knocker
+
+:HANDICRAFT
+1,Basket
+2,Vase
+3,Minitaure Painting
+4,Abacas
+5,Ship's Figurehead
+6,Bust
+
+:ARTIFACTS
+1,[WEAPON]
+2,[ENTERTAINMENT]
+3,[OFFENSIVE_DEVICE]
+4,[PROTECTIVE_DEVICE]
+5,[INFORMATIVE_DEVICE]
+6,[LEADERSHIP_DEVICE]
+
+:WEAPON
+1,a Weapon (Sword)
+2,a Weapon (Dagger)
+3,a Weapon (Hammer)
+4,a Weapon (Club)
+5,a Weapon (Battleaxe)
+6,a Weapon (Javelin)
+
+:ENTERTAINMENT
+1,an Entertainment Device (Animated)
+2,an Entertainment Device (Musical)
+3,an Entertainment Device (Dancing)
+4,an Entertainment Device (Serving)
+5,an Entertainment Device (Intensifying)
+6,an Entertainment Device (Dreaming)
+
+:OFFENSIVE_DEVICE
+1,an Offensive Device (Hand)
+2,an Offensive Device (Vase)
+3,an Offensive Device (Eye)
+4,an Offensive Device (Box)
+5,an Offensive Device (Horn)
+6,an Offensive Device (Vat)
+
+:PROTECTIVE_DEVICE
+1,a Protective Device (Machine)
+2,a Protective Device (Staff)
+3,a Protective Device (Vial)
+4,a Protective Device (Garment)
+5,a Protective Device (Talisman)
+6,a Protective Device (Armor)
+
+:INFORMATIVE_DEVICE
+1,an Informative Device (Stone)
+2,an Informative Device (Flask)
+3,an Informative Device (Orb)
+4,an Informative Device (Diadem)
+5,an Informative Device (Crystal Ball)
+6,an Informative Device (Necklace)
+
+:LEADERSHIP_DEVICE
+1,a Leadership Device (Ring)
+2,a Leadership Device (Gem)
+3,a Leadership Device (Throne)
+4,a Leadership Device (Rod)
+5,a Leadership Device (Sword)
+6,a Leadership Device (Scepter)

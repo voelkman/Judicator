@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding="ISO-8859-1"?>
+<!ELEMENT assassination
+   (assassinationweapon+)
+>
+<!ELEMENT assassinationweapon
+   (name,mk)
+>
+<!ELEMENT bf
+   (#PCDATA)
+>
+<!ELEMENT bonus
+   (#PCDATA)
+>
+<!ELEMENT df
+   (#PCDATA)
+>
+<!ELEMENT gf
+   (#PCDATA)
+>
+<!ELEMENT melee
+   (meleeweapon+)
+>
+<!ELEMENT meleeweapon
+   (name,mk,df,gf,bf,sch,range?)
+>
+
+<!ATTLIST meleeweapon
+	class (VeryHeavy|Heavy|Light|VeryLight) #REQUIRED
+	
+>
+<!ELEMENT missile
+   (missileweapon+)
+>
+<!ELEMENT missileweapon
+   (name,mk,range,sch)
+>
+
+<!ELEMENT mk
+   (#PCDATA)
+>
+<!ELEMENT multiplier
+   (#PCDATA)
+>
+<!ELEMENT name
+   (#PCDATA)
+>
+<!ELEMENT range
+   (#PCDATA)
+>
+<!ELEMENT sch
+   (multiplier,type,bonus)
+>
+<!ELEMENT type
+   (#PCDATA)
+>
+<!ELEMENT weapons
+   (melee,missile,assassination)
+>

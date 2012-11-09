@@ -1,0 +1,236 @@
+#"Organisationen" publish
+# Organizations
+#
+
+;Start
+1-3,[Sub1] [Sub2]
+1,[Sub3]
+1,[Sub4] 
+1,[Sub5]
+
+;Sub1
+1-19,Die {If~{Dice~1d4}<2,[Adj]en }{Cap~[GroupP]}
+1-11,Die {If~{Dice~1d4}<2,[Adj]e }{Cap~[GroupF]}
+1-7,Der {If~{Dice~1d4}<2,[Adj]e }{Cap~[GroupM]}
+1-2,Das {If~{Dice~1d4}<2,[Adj]e }{Cap~[GroupN]}
+
+;Sub2
+1,des {If~{Dice~1d2}<2,[Adj]en }{Cap~[Creatures.GenitivN]}
+1-2,der {If~{Dice~1d2}<2,[Adj]en }{Cap~[Creatures.GenitivF]}
+1-3,des {If~{Dice~1d2}<2,[Adj]en }{Cap~[Creatures.GenitivM]}
+1,des {If~{Dice~1d2}<2,[Adj]en }{Cap~[ObjN]}
+1-2,der {If~{Dice~1d2}<2,[Adj]en }{Cap~[ObjF]}
+1-3,des {If~{Dice~1d2}<2,[Adj]en }{Cap~[ObjM]}
+
+;Sub3
+1-19,Die [Adj]en {Cap~[GroupP]}
+1-11,Die [Adj]e {Cap~[GroupF]}
+1-7,Der [Adj]e {Cap~[GroupM]}
+1-2,Das [Adj]e {Cap~[GroupN]}
+
+;Sub4
+1,{CapEachWord~[Adj]es [Creatures.N]}
+1-2,{CapEachWord~[Adj]e [Creatures.F]}
+1-3,{CapEachWord~[Adj]er [Creatures.M]}
+1,{CapEachWord~[Adj]e [Things.PeopleF]}
+1,{CapEachWord~[Adj]e [Things.PeopleN]}
+1-3,{CapEachWord~[Adj]er [Things.PeopleM]}
+
+;Sub5
+1,{Cap~[Creatures.Prefix]{ChooseFrom~GroupP,GroupM,GroupF,GroupN}}
+1,{Cap~[Creatures.Prefix]{ChooseFrom~GroupP,GroupM,GroupF,GroupN}}
+
+;Old
+1,{Cap~[Group]} der {Cap~[Adj]}en [Obj]
+1,{CapEachWord~[Adj]en [Obj]}
+1,{CapEachWord~[Adj]en [Obj] [Group]}
+1,{Cap~[Group]} der {Cap~[Obj]}
+1,{CapEachWord~[Obj] [Group]}
+1,{CapEachWord~[Adj] [Group]}
+
+;Adj
+1,angeklagt
+1,arcan
+1,astral
+1,azur
+1,ewig
+1,schwarz
+1,gesegnet
+1,blau
+1,blechern
+1,tapfer
+1,bronzen
+1,brennend
+1,himmlisch
+1,chromatisch
+1,kupfern
+1,mutig
+1,blutrot
+1,kristall
+1,dunkel
+1,diamanten
+1,göttlich
+1,smaragdgrün
+1,unsterblich
+1,geistig
+1,gefallen
+1,gläsern
+1,glorreich
+1,golden
+1,gülden
+1,grün
+1,grau
+1,verborgen
+1,heilig
+1,imperial
+1,höllisch
+1,unbezwingbar
+1,ehern
+1,jaden
+1,gerecht
+1,legendär
+1,verloren
+1,magisch
+1,zauberhaft
+1,gnädig
+1,mächtig
+1,mystisch
+1,unheimlich
+1,eichern
+1,finster
+1,schillernd
+1,orangen
+1,rein
+1,violett
+1,rot
+1,königlich
+1,rubinrot
+1,heilig
+1,saphirblau
+1,scharlachrot
+1,geheim
+1,silbern
+1,stählern
+1,steinern
+1,unheilig
+1,verdeckt
+1,weiß
+1,gelb
+
+;ObjM
+1,pfeils
+1,aufgangs
+1,kelchs
+1,dolchs
+1,sonnenaufgangs
+1,abends
+1,waldes
+1,handschuhs
+1,edelsteins
+1,helms
+1,hügels
+1,königs
+1,ritters
+1,lotus
+1,mondes
+1,bergs
+1,ozeans
+1,rings
+1,flusses
+1,sees
+1,schattens
+1,splitters
+1,schildes
+1,schädels
+1,stabs
+1,sterns
+1,sturms
+1,turms
+1,orts
+1,walls
+1,winds
+1,zauberers
+
+;ObjF
+1,axt
+1,klinge
+1,heimat
+1,stadt
+1,wolke
+1,krone
+1,finsternis
+1,faust
+1,flamme
+1,schmiede
+1,hand
+1,härte
+1,nacht
+1,königin
+1,rose
+1,rune
+1,schrift
+1,spinne
+1,sonne
+
+;ObjN
+1,schlosses
+1,kreuzes
+1,auges
+1,tores
+1,herzens
+1,horns
+1,messers
+1,lichtes
+1,schwertes
+1,buches
+1,dorfs
+1,wortes
+
+;GroupM
+1,kreis
+1,clan
+1,block
+1,kult
+1,orden
+1,ring
+1,weg
+
+;GroupF
+1,allianz
+1,bande
+1,bruderschaft
+1,gesellschaft
+1,vereinigung
+1,gefolgschaft
+1,gilde
+1,horde
+1,truppe
+1,schwesternschaft
+1,unternehmung
+
+;GroupP
+1,brüder
+1,verteidiger
+1,kämpfer
+1,wächter
+1,wachen
+1,helden
+1,jäger
+1,bewacher
+1,ritter
+1,meister
+1,schützer
+1,räuber
+1,forscher
+1,diener
+1,schwestern
+1,richter
+1,wanderer
+1,krieger
+1,beobachter
+
+;GroupN
+1,triumphirat
+1,haus
+
+ 

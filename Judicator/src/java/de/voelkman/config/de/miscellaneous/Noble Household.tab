@@ -1,0 +1,26 @@
+# "Noble Household"
+#
+# Copyright 1998 Bruce A. Gulke
+#
+
+:Start
+1,[Male Title] [Formal Names.Start], [Male Title II] von [Fantasy Names.Start], und sein Haus.
+1,[Female Title] [Formal Names.Start], [Female Title II] von [Fantasy Names.Start], und ihr Haus.
+
+:Male Title
+1,Lord
+2,Sir
+
+:Female Title
+1,Lady
+2,Dame
+
+:Male Title II
+1,Baron
+2,Herr
+3,Truchsess
+
+:Female Title II
+1,Baroness
+2,Herrin
+3,Truchsessin

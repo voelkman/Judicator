@@ -1,0 +1,70 @@
+<!ELEMENT professions (skillconfig, profession+)>
+<!ELEMENT profession (name,
+							skills,
+							freeskillpoints,
+							freelanguagepoints,
+							languages,
+							restrictions?,
+							numberOfWeapons,
+							incrementOFDF,
+							lifepowergain,
+							spellpower?,
+							spellpowergain?,
+							magicValues?,
+							spells?,
+							agebonusgain?,
+							specials?
+							)>
+
+
+<!ELEMENT lifepowergain (type, multiplier, bonus)>
+<!ELEMENT spellpowergain (type, multiplier, bonus)>
+<!ELEMENT agebonusgain (#PCDATA)>
+<!ELEMENT languages (language*)>
+<!ELEMENT language (name,value)>
+<!ELEMENT spellpower (type, multiplier, bonus)>
+<!ATTLIST spellpower
+		additionalPower (yes|no) "no"
+>
+<!ELEMENT magicValues (ability+)>
+<!ELEMENT skills (ability+)>
+<!ELEMENT restrictions (restriction*)>
+<!ELEMENT restriction (type,type2,value)>
+<!ELEMENT skillconfig (skill*)>
+<!ELEMENT skill (#PCDATA)>
+<!ATTLIST skill
+		number CDATA #REQUIRED
+		type (Calc|Base|Level|Percent|CalcFixed) #REQUIRED
+		p1 (ST|EN|DX|AG|RE|SE|SP|PR) #IMPLIED
+		p2 (ST|EN|DX|AG|RE|SE|SP|PR) #IMPLIED
+		p3 (ST|EN|DX|AG|RE|SE|SP|PR) #IMPLIED
+		p4 (ST|EN|DX|AG|RE|SE|SP|PR) #IMPLIED
+		family CDATA #REQUIRED
+>
+
+<!ELEMENT ability (#PCDATA)>
+<!ATTLIST ability
+		number CDATA #REQUIRED
+>
+
+<!ELEMENT numberOfWeapons (#PCDATA)>
+<!ATTLIST numberOfWeapons
+		special (NO|BARBARIAN|WARRIOR|DRUID|MAGE) #REQUIRED
+>
+<!ATTLIST magicValues
+		increment (NO|PRIMARY|SECONDARY) #REQUIRED
+>
+<!ELEMENT incrementOFDF (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT power (#PCDATA)>
+<!ELEMENT type2 (#PCDATA)>
+<!ELEMENT multiplier (#PCDATA)>
+<!ELEMENT bonus (#PCDATA)>
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT special (#PCDATA)>
+<!ELEMENT freelanguagepoints (#PCDATA)>
+<!ELEMENT freeskillpoints (#PCDATA)>
+<!ELEMENT spells (spell+)>
+<!ELEMENT spell (name, type, power)>
+<!ELEMENT specials (special+)>

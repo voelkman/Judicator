@@ -1,0 +1,170 @@
+#"Regionen" publish 
+#-------------------------
+# WORLD OF TRID (REGION NAMES)
+# Creates names for geographic areas in the World of Trid
+# Version: 1.0
+# Required: none
+# Copyright � 2004 The Welsh Piper LLC
+# -------------------------
+
+# -------------------------
+# START
+# -------------------------
+;Start
+1,Der [Descriptor]e {Cap~[regM]}
+1,Die [Descriptor]e {Cap~[regF]}
+1,Das [Descriptor]e {Cap~[regN]}
+1,Die [Descriptor]en {Cap~[regP]}
+1,Der {Cap~[regM]} [Ending]
+1,Die {Cap~[regF]} [Ending]
+1,Das {Cap~[regN]} [Ending]
+1,Die {Cap~[regP]} [Ending]
+
+;Descriptor
+1,[Condition]
+1,[Environment]
+1,[Inhabitant]
+1,[Location]
+1,[Object]
+1,[Weather]
+
+;Ending
+1-2,von [Standard.Start]
+1,der {If~{Dice~1d3}<2,[Adjective.Start]en }[Creatures.Plural]
+1,des {If~{Dice~1d3}<2,[Adjective.Start]en }[Creatures.M]
+1,der {If~{Dice~1d3}<2,[Adjective.Start]en }[Creatures.F]
+1,des {If~{Dice~1d3}<2,[Adjective.Start]en }[Creatures.N]
+
+# -------------------------
+# Descriptor subtables
+# -------------------------
+
+;Condition
+1,chaosisch
+1,schön
+1,gefallen
+1,vergessen
+1,verflucht
+1,zerschlagen
+1,gülden
+1,groß
+1,hart
+1,gesetzlos
+1,neu
+1,alt
+1,ruiniert
+1,verbrannt
+1,still
+1,leicht
+1,sanft
+1,zersplittert
+1,staid
+1,kräftig
+1,geschmiedet
+1,wild
+1,jung
+
+;Environment
+1,trocken
+1,hell
+1,gebrochen
+1,kühl
+1,kalt
+1,dunkel
+1,feucht
+1,heiss
+1,mild
+1,nass
+
+;Inhabitant
+1,demonisch
+1,feengleich
+1,goblinoid
+1,manisch
+1,bevölkert
+1,ungezähmt
+
+;Location
+1,tief
+1,östlich
+1,hoh
+1,niedr
+1,mittler
+1,nördlich
+1,südlich
+1,westlich
+
+;Object
+1,steinern
+1,neblig
+1,staubig
+1,monolithisch
+1,sandig
+
+;Weather
+1,wolkig
+1,frostig
+1,eisig
+1,regnerisch
+1,schneebedeckt
+1,dampfig
+1,sonnig
+
+# -------------------------
+# Region subtables
+# -------------------------
+
+;regF
+1,ausdehnung
+1,dürre
+1,ebene
+1,feste
+1,festung
+1,grenze
+1,heimat
+1,küste
+1,öde
+1,städte
+1,steppe
+1,strecke
+1,tundra
+1,weite
+1,wildbahn
+1,wildnis
+1,wüste
+1,zivilisation
+
+;regM
+1,boden
+1,busch
+1,dschungel
+1,hafen
+1,hof
+1,markt
+1,sporn
+1,wald
+
+;regN
+1,gebiet
+1,kaiserreich
+1,königreich
+1,land
+1,reich
+1,tal
+
+;regP
+1,äcker
+1,berge
+1,dünen
+1,grafschaften
+1,gründe
+1,höhen
+1,hügel
+1,länder
+1,niederungen
+1,reiche
+1,schnellen
+1,sümpfe
+1,territorien
+1,tropen
+1,wälder

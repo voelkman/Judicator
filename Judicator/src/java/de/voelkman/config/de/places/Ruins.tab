@@ -1,0 +1,42 @@
+# Ruins
+#
+# Ruins that may be encountered during
+# wilderness journeys.
+#
+# Copyright 1998 Bruce A. Gulke
+#
+
+:Start
+1,[Opening] [Building]. [Occupation]
+
+:Opening
+1,the ruins of
+2,the remnants of
+3,the crumbling remains of
+4,what remains of
+
+:Building
+1-14,an old castle
+15-26,a forgotten monastery
+26-38,a sorcerer's tower
+39-52,an orcish stronghold
+53-64,a large manor
+65-76,a small shrine
+77-88,a great temple
+89-100,a wayside inn
+
+:Occupation
+1-3,It appears to be deserted.
+4,It is currently inhabited by [Inhabitants].
+
+:Inhabitants
+1,rodents, insects, and spiders
+2,a group of brigands
+3,a horde of the Undead
+4,cultists of a dark god, attempting to operate in secret
+5,a powerful demon, bound within the ruins by magic
+6,a tribe of ogres
+7,an evil warlord who is rebuilding an army
+8,a small dragon
+9,refugees from a nearby region, which was decimated by war
+10,a noble and his entourage, who are searching for something within

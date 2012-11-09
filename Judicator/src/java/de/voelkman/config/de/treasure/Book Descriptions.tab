@@ -1,0 +1,78 @@
+#"Bücherbeschreibung" publish single
+# Book Descriptions
+#
+# Books a character might find in a
+# mage's study or an old library.
+#
+#
+
+:Start
+1,[Book Titles.Start]{CR~}
+_[Description]{CR~}
+
+:Description
+1-3,Das Buch ist [Size] und in [Miscellaneous.General Quality]em Zustand.{CR~}Der Einband ist aus [Cover].{CR~}Die Seiten aus [Pages] sind [Binding].
+4-5,Das Buch ist [Size] und in [Miscellaneous.General Quality]em Zustand.{CR~}Der Einband ist aus [Cover].{CR~}Die Seiten aus [Pages] sind [Binding].{CR~}{Cap~[Special]}
+
+:Size
+1,ein Riesenwälzer ({Dice~2d400+400} Seiten)
+2-3,ein dickes Buch ({Dice~2d100+200} Seiten)
+4,eine dünne Ausgabe ({Dice~1d30+10} Seiten)
+5-7,normal im Umfang ({Dice~2d80+40} Seiten)
+
+:Cover
+1-8,Hirschleder
+9,über Holz gespannter Menschenhaut
+10-31,Leder
+32-35,poliertem Metall
+36-37,Schuppen auf dünnem Holz
+38-44,dünnem Holz
+45-50,schwerem Holz
+
+:Pages
+1,getrockneter Haut
+2-13,Pergament
+14-15,gestanztem Metall
+16-20,Tuch
+21-23,Holz
+24-26,Leinengewebe
+27-28,Papyrus
+29-35,Papier
+
+:Binding
+1-2,mit [Adjective.Metal]en Ringen zusammengeheftet
+3-6,lose
+7-10,am Buchrücken zusammengenäht
+11-15,ungebunden, aber mit einem Leinenband zusammengeschnürt
+16-20,ungebunden, aber mit einem Lederband zusammengeschnürt
+21, mit einem seltsamen Material zusammengeklebt
+22, mit [Adjective.Metal]en Nieten zusammengeheftet
+
+:Special
+1-2,das Buch ziert ein kleines Metallschloß
+1,das Buch ist in einem interessant gemusterten Holzschuber
+1,das Buch ist in einer abschließbaren Schatulle
+1-2,das Buch ist in schmutzige Leinen gehüllt
+1-2,das Buch ist in [Adjective.Color]en Samt gehüllt
+1-3,die Buchdeckel sind mit [Adjective.Metal]en Ecken versehen
+1-2,auf dem Deckel sind [Adjective.Mystic]e Runen zu sehen.
+1-2,das Buch ziert ein Wappen ([CoatsOfArms.Start])
+1,auf dem Buch ist ein Totenkopf zu sehen
+1,Auf dem Einband ist ein eigenartiges geometrisches Muster aufgemalt
+1-2,Der Einband zeigt [Creature] und [Creature] im Kampf
+1-2,Rücken und Einband zeigen eine Gruppe stilisierter {Cap~[Creatures.Plural]}
+1-2,Auf dem Einband ist eine Zeichnung von mehreren Leuten, die [Creature] bekämpfen
+1-3,Auf dem Buchrücken ist [Creature] zu sehen
+1-3,das Buch war an einigen Stellen großer Hitze ausgesetzt
+1,das Buch scheint [Adjective.Color] zu leuchten
+1-2,das Buch hat einige Einmerker zwischen den Seiten
+1-2,am Rand der Seiten sind viele Anmerkungen gekritzelt
+1,ein Schnitt geht durch viele Seiten hindurch
+1-2,das Buch hat Wasserflecken.
+1,Reste von Moos lassen sich auf dem Buchdeckel erahnen.
+1-2,das Buch trägt neben Titel die Zahl {Dice~1D10}
+
+:Creature
+1-3,einen {Cap~[Creatures.M]}
+1-2,eine {Cap~[Creatures.F]}
+1,ein {Cap~[Creatures.N]}

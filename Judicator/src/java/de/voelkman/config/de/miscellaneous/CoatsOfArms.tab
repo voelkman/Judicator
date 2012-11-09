@@ -1,0 +1,72 @@
+#"Heraldische Wappen" publish
+# Coats-of-arms
+#
+# Basic heraldric devices
+#
+# Originally created by Bruce A. Gulke
+#
+# Improved by Scott Barrie
+
+
+:Start
+1-4,{Cap~[Metal][Blazon]} auf [Color]em Grund
+5-8,{Cap~[Color][Blazon]} auf [Metal]em Grund
+9-10,{Cap~[Metal][Blazon]} und [Metal][Blazon] auf [Color]em Grund
+11-12,{Cap~[Color][Blazon]} und [Color][Blazon] auf [Metal]em Grund
+
+:Blazon
+1-2,e {Cap~[BlazonF]}
+1,es {Cap~[BlazonS]}
+1-4,er {Cap~[BlazonM]}
+1,e {Cap~[BlazonP]}
+
+
+:Metal
+1,golden
+2,silbern
+
+:Color
+1,rot
+2,blau
+3,grün
+4,schwarz
+
+:BlazonF
+1,Faust
+2,Krone
+3,Lilie
+4-5,[Creatures.F]
+6,Korne
+7,Muschel
+8,Harfe
+9,Axt
+10,Sichel
+11,Sonne
+
+:BlazonS
+1,[Creatures.N]
+2,Schwert
+3,Kreuz
+4,Schiff
+
+:BlazonP
+1,Streifen
+2,Schuppen
+
+:BlazonM
+1-4,[Creatures.M]
+5,Turm
+6,Schädel
+7,Stern
+8,Pfeil
+9,Baum
+10,Balken
+11,ring
+12,Mond
+13,Kreis
+
+:NumWord
+1,one
+2,two
+3,three
+4,four

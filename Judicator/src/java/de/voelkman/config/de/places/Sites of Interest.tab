@@ -1,0 +1,50 @@
+# Site of Interest
+#
+# Places that may be encountered during
+# a party's travel.
+#
+# Copyright 1998 Bruce A. Gulke
+#
+
+:Start
+1,[Opening] [Miscellaneous.Direction], [Middle] [Place].
+2,[Opening] [Miscellaneous.Direction], [Middle] [Place] {CR~}[Countryside].
+3,[Opening] [Miscellaneous.Direction], [Middle] [Place] {CR~}Nearby is the [Settlement].
+4,[Opening] [Miscellaneous.Direction], [Middle] [Place] {CR~}[Countryside]. Nearby is the [Settlement].
+5,[Opening] [Miscellaneous.Direction], [Middle] [Place] {CR~}[Village].
+
+:Opening
+1,To the
+2,A short distance to the
+3,Not far to the
+4,Far to the
+
+:Middle
+1,you can see
+2,there is
+
+:Place
+1-8,[Castles.Start]
+9-13,[Temples.Start]
+14-20,[Ruins.Start]
+
+:Countryside
+1,It sits in the middle of a green field
+2,It lies upon a small hill
+3,A small stream runs past it
+4,It is surrounded by a cluster of trees
+5,The land surrounding it is barren
+6,It is on the edge of a large forest
+7,It is on the shore of a small lake
+8,It overlooks the banks of a good-sized river
+9,It is nestled in a shallow valley
+10,It lies at the base of a range of mountains
+
+:Settlement
+1-4,hamlet of [TownsGerman.Start]
+5-8,village of [TownsGerman.Start]
+9-10,town of [TownsGerman.Start]
+
+:Village
+1-13,It looks as if a village once stood nearby, but it was obviously deserted long-ago
+14-20,A village stands nearby, but it looks to be recently deserted

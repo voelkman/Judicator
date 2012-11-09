@@ -1,0 +1,70 @@
+#"Formell" publish
+# Formal Names
+#
+# Use for full, grandiose names...
+#
+# Certain portions from the world of Mythosa
+# (http://www.mythosa.net)
+#
+# Copyright 1998 Bruce A. Gulke
+#
+
+:Start
+1,[Fantasy Names.Start] aus [Place]
+2,[Fantasy Names.Start] [Fantasy Names.Start] der [Adjective]
+3,[Fantasy Names.Start] der [Adjective]
+4,[Fantasy Names.Start] [Fantasy Names.Start]
+5,[Fantasy Names.Start]
+
+:StartGen
+1,[Fantasy Names.Start] aus [Place]
+2,[Fantasy Names.Start] [Fantasy Names.Start] dem [Adjective]n
+3,[Fantasy Names.Start] dem [Adjective]n
+4,[Fantasy Names.Start] [Fantasy Names.Start]{If~{Dice~1d5}=1,[Num]}
+5,[Fantasy Names.Start]
+
+:Num
+1,I
+2,II
+3,III
+4,IV
+
+:Adjective
+1,Graue
+2,Rote
+3,Blaue
+4,Weiße
+9,Jüngere
+10,Ältere
+11,Große
+12,Kleine
+13,Harte
+14,Weise
+15,Heilige
+16,Unheilige
+17,Edle
+18,Ungewaschene
+19,Wahnsinnide
+20,Gerechte
+
+:Place
+1,Ilmara
+2,Ulthia
+3,Yar
+4,Damaristan
+5,dem Wald
+6,der Wüste
+7,den Hügellanden
+8,Zeldora
+9,Rhijad
+10,Gothmoor
+11,Aelorea
+12,Spyre
+13,Stalis
+14,Talismarr
+15,Shesada
+16,Zygorn
+17,Ashford
+18,Carsyr
+19,Marymyth
+20,Kyrothu

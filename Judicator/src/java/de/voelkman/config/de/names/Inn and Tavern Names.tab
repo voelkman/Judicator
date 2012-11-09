@@ -1,0 +1,136 @@
+#"Gasthäuser und Tavernen" publish
+# Inn and Tavern Names
+#
+#
+
+:Start
+1,[Names]
+
+:Names
+1-3,Zum {CapEachWord~[Adjective.Color_Metal]en [Variant I]}
+3-4,{CapEachWord~[Things.PeopleM] [Place]}
+4-5,{CapEachWord~[Things.PeopleM]s [Item]}
+5-6,{CapEachWord~[Item] }[Creatures.Genitiv]
+7-8,Zum {CapEachWord~[AllAdjectives]en [Things.PeopleM]}
+9,Zur {CapEachWord~[AllAdjectives]en [Things.PeopleF]}
+9,Zu den {CapEachWord~[AllAdjectives]en [Things.PeoplePl]}
+8-10,{CapEachWord~[NPlace]}
+10-11,{CapEachWord~[NItem]}
+11-15,Zum {CapEachWord~[Things.PeopleM]}
+11,Zur {CapEachWord~[Things.PeopleF]}
+13,Zum {Cap~[CreatureM]} und {Cap~[CreatureM]}
+13,Zur {Cap~[CreatureF]} und {Cap~[CreatureF]}
+14,Zum {Cap~[Things.PeopleM]} und {Cap~[Things.PeopleM]}
+15,{Cap~[Item]} und {Cap~[Item]}
+
+:Variant I
+1,[Things.PeopleM]
+2,[Place1]
+3,[CreatureM]
+4,[Item1]
+
+:AllAdjectives
+1,[Adjective.Color_Metal]
+1,[Adjective.Inn]
+1,[Adjective.Dark]
+
+:Adj
+1,[Adjective.Inn]
+
+:Adj2
+1,[Adjective.Dark]
+
+:Item
+1,[Item1]
+1,[Item2]
+1,[Item3]
+
+:NItem
+1,zum [AllAdjectives]en [Item1]
+1,zur [AllAdjectives]en [Item2]
+1,zum [AllAdjectives]en [Item3]
+
+:Item1
+1,totenkopf
+1,speer
+1,dolch
+1,kopf
+1,schwanz
+1,becher
+1,anker
+1,pfeil
+1,helm
+1,krug
+1,wagen
+1,sattel
+
+:Item2
+1,klinge
+1,axt
+1,glocke
+1,flagge
+1,münze
+1,post
+1,harfe
+1,pfeife
+1,trommel
+
+:Item3
+1,schwert
+1,wagenrad
+1,gewand
+1,schild
+1,glas
+1,auge
+1-2,fass
+
+:Place
+1-2,[Place1]
+1,[Place1]
+
+:NPlace
+1-2,zum [AllAdjectives]en {Cap~[Place1]}
+1,zur [AllAdjectives]en {Cap~[Place2]}
+1-2,zum [Creatures.Prefix]{LCase~[Place1]}
+1,zur [Creatures.Prefix]{LCase~[Place2]}
+
+:Place1
+1,Reich
+2,Hügel
+3,Wald
+4,Schloß
+5,Thron
+6,Tor
+7,Schrein
+8,Tal
+9,Hafen
+10,Unterschlupf
+11,Turm
+12,Fluß
+13,Nest
+14,Verlies
+15,Tempel
+16,Stern
+17,Kamin
+
+:Place2
+1,Brücke
+2,Ruhe
+3,Residenz
+4,Sonne
+5,Traube
+6,Mühle
+7,Stätte
+8,Schenke
+
+:CreatureM
+1-6,[Creatures.AnimalM]
+7,[Creatures.BirdM]
+8-10,[Creatures.FantasyM]
+11-13,[Creatures.AnimalN]
+15-16,[Creatures.FantasyN]
+
+:CreatureF
+1-6,[Creatures.AnimalF]
+7,[Creatures.BirdF]
+8-10,[Creatures.FantasyF]

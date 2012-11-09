@@ -1,0 +1,126 @@
+# Character Appearance
+#
+# Copyright 2001  Idea by Bruce A. Gulke
+# Translated by Manfred Voelk
+
+:Start
+1,Größe: [Height]{CR~}
+_Gewicht: [Weight]{CR~}
+_Haar: [Hair]{CR~}
+_Augen: [Eyes]{CR~}
+_Speziell{CR~}{Loop~{Dice~1d4},{Cap~[Special]}}
+
+:Height
+1,sehr klein 
+2,klein
+3-7,normal
+8,groß
+9,sehr groß
+
+:Weight
+1,mager
+2,schlank
+3-7,normal
+8,stattlich
+9,fett
+
+:Hair
+1-12,[HairColor] [Style]
+13,Glatze
+
+:HairColor
+1-5,[Precolor]braun
+6-9,[Precolor]blond
+10-11,[Precolor]rot
+12,weiß
+13,[Precolor]grau
+
+:Style
+1-3,kurz und glatt
+4-5,kurz und struppig
+6-8,mittellang und glatt
+9-11,mittellang und gelockt
+12,lang und glatt
+13,als langen, glatten Pferdeschwanz
+14,lang, gelockt und offen
+15,lang, gelockt und zusammengebunden
+16,als Zopf
+
+:Style2
+1-2 geschoren
+3 matt
+4 glänzend
+
+:Eyes
+1-4,[Precolor]braun
+5-8,[Precolor]blau
+9-10,[Precolor]grün
+11,[Precolor]rot
+12,[Precolor]grau
+13,[Precolor]violett
+
+:Special
+1,niest immer wieder
+2,blickt immer wieder hinter sich
+3-5, leidet an [Insanities.Start]
+6,hustet immer wieder
+7,zwinkert ständig
+8,humpelt [Side]s
+9,streichelt sich [Body Part], als ob etwas fehlen würde
+10-11,trägt [Side]s eine Augenklappe 
+13-14,hat [Body Part] eine Narbe
+16-17,ist [Body Part] tätowiert
+18,summt unbewußt vor sich hin
+1,hat eine sonore Stimme
+1,hat eine zur Erscheinung unpassende Stimme
+1,knackt ständig in den Fingern
+1,lispelt
+1,hat hervorstehende Augen
+1,hat eine markante Nase
+1,hat große Ohren
+1,hat die Nase in einem Kampf verloren
+1,hat [Side]s ein Glasauge
+1,ist hochrot im Gesicht
+1,wirkt ständig angespannt
+1,trät immer einen typischen Gegenstand in der Hand
+1,bohrt immer in der Nase
+1,spielt ständig mit einem Messer
+1,trägt interessante, [Adjective.Color] Schuhe
+1,hat immer Süßes zur Hand
+1,hat immer eine Lebensweisheit parat
+1,verkauft Talismane gegen den {Cap~[Things.DarkM]}
+1,verkauft Talismane gegen die {Cap~[Things.DarkF]}
+1,verkauft Talismane gegen das {Cap~[Things.DarkN]}
+1,knischt mit den Zähnen
+1,spricht bedächtig und monoton
+1,verzieht vor jedem Satz das Gesicht
+1,läßt oft den Buchstaben weg
+1,bricht Sätze in der Mitte ab
+1,hat eine [Precolor][Adjective.Color]-schimmernde Haut
+1,hat ein ausgeprägtes Gebiß
+1,raucht ständig Pfeife
+1,fängt ständig Fliegen
+1,putzt sich mit einem Messer die Fingernägel
+1,wirkt immer übermüdet
+1,wird nicht müde vor [Lovecraft.Start] zu warnen
+1,sitzt und geht immer betont aufrecht
+1,duckt sich ständig
+
+:Side
+1,link
+2,recht
+
+:Body Part
+1,an der Strin
+2,an der [Side]en Wange
+3,an der [Side]en Hand
+4,am [Side]en Unterarm
+5,am [Side]en Oberarm
+6,am Nacken
+
+:Precolor
+1,hell
+2-4,
+5,dunkel
+
+:Letter

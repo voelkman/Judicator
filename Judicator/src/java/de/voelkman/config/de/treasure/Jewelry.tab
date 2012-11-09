@@ -1,0 +1,81 @@
+#"Schätze" publish single
+# Jewelry
+#
+# Originally created by Bruce A. Gulke
+#
+# Improved by Scott Barrie
+
+:Start
+1,[Start2] in gutem Zustand, Wert: {Dice~{Dice~1d5}d10*25} gp
+2,[Start2] in gebrauchtem Zustand, Wert: {Dice~{Dice~1d4}d10*25} gp
+3,[Start2] in schlechtem Zustand, Wert: {Dice~{Dice~1d3}d10*25} gp
+4,[Start2] in restaurierungsbedürftigen Zustand, Wert: {Dice~{Dice~1d2}d10*25} gp
+5,[Start2] von unnatürlicher Schönheit, Wert: {Dice~{Dice~1d6}d10*25} gp
+6,[Start2] von scheinbar magischer Natur, Wert: {Dice~2d10*50} gp
+
+:Start2
+1-6,{CapEachWord~[Item]} aus {Cap~[Miscellaneous.Precious Metal]}
+1-4,{CapEachWord~[Item]} aus {Cap~[Miscellaneous.Precious Metal]},mit {Cap~[Gems]} besetzt
+1-5,{CapEachWord~[Item]} aus {Cap~[Miscellaneous.Precious Metal]}, mit [Gem] besetzt
+1-3,{CapEachWord~[Item]} aus {Cap~[Miscellaneous.Precious Metal]}, [Design]
+
+:Item
+1,ein Fußkettchen
+2,ein armband
+3-4,ein armreif
+5,eine Brosche
+6,ein verschluß
+7,ein kopfband
+8-9,eine gürtelschnalle
+10,ein ohrring
+11-12,ein medallion
+13-14,eine halskette
+15-16,ein anhänger
+17-18,ein ring
+19,ein diadem
+20,ein halsring
+
+:Design
+1,mit eigenartigen Gravuren 
+2,mit eingravierten konzentrischen Kreisen
+3,mit einem verschlungen Muster
+4,mit einem [Adjective.Metal]en Muster
+4,mit einer [Adjective.Metal]en Rune
+6,mit einer eingravierten Rune
+7,mit einer eingravierten Drachengestalt
+8,mit einem eingravierten Königskopf
+9,mit netzartigen Mustern versehen
+10,mit dem eingravierten Symbol eines[CoatsOfArms.BlazonM]
+11,mit dem eingravierten Symbol einrs[CoatsOfArms.BlazonF]
+
+:Gem
+1-3,einem Jadestein
+4-6,einem Onyx
+7-9,einem Türkis
+10-12,einem Smaragd
+13,einem Diamanten
+14-16,einem Saphir
+17-19,einem Rubin
+20-22,einem Granat
+23-25,einem Rosenquartz
+26-27,einem Bernstein
+28,einer Perle
+29,einem Topaz
+30,einem Opal
+31,einem Amethysten
+
+:Gems
+1-3,Jade
+4-6,Onyxen
+7-9,Türkisen
+10-12,smaragden
+13,diamanten
+14-16,saphiren
+17-19,rubinen
+20-22,granatsteinen
+23-25,rosenquartzen
+26-27,bernsteinen
+28,perlen
+29,topazen
+30,opalen
+31,amethysten

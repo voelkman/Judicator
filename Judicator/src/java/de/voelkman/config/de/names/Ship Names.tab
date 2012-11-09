@@ -1,0 +1,276 @@
+#"Schiffsnamen" publish
+# Ship Names
+#
+# Requires version 5.0 of TableSmith
+
+%type%{Dice~1d3}
+%prefix%[Random]
+%gender%[Gender]
+
+;Start
+1,[Generate]
+
+#1,{If~%type%<2,M}{If~%type%>=2,F}-%type%
+
+;Gender
+1,M
+2,F
+
+;Random
+1,Good
+1,Neutral
+1,Evil
+
+;AM
+1,Der
+
+;AF
+1,Die
+
+;Generate
+1,[A%gender%] [%prefix%Adj]e {Cap~[%prefix%Noun%gender%]}
+1,[A%gender%] [%prefix%Adj]e {Cap~[%prefix%Person%gender%]}
+1,[A%gender%] {Cap~[%prefix%Noun%gender%]} [%prefix%PersonG]
+1,{Cap~[%prefix%Person%gender%]} [Name%gender%]'s {Cap~[%prefix%Noun%gender%]}
+2,[A%gender%] {Cap~[%prefix%Noun%gender%]}
+
+;GoodPersonM
+1,[NeutralPersonM]
+1,Paladin
+1,Kreuzritter
+
+;GoodPersonF
+1,[NeutralPersonF]
+1,Maid
+1,Jungfrau
+
+;GoodPersonG
+1,[NeutralPersonG]
+1,des Kreuzritters
+1,des Paladins
+1,der Maid
+1,der Jungfrau
+
+;NeutralPersonM
+1,baron
+1,graf
+1,herzog
+1,markgraf
+1,könig
+1,ritter
+1,prinz
+1,fürst
+
+;NeutralPersonF
+1,baronin
+1,gräfin
+1,herzogin
+1,markgräfin
+1,königin
+1,dame
+1,prinzessin
+1,fürstin
+
+;NeutralPersonG
+1,des Barons
+1,des Grafen
+1,des Herzogs
+1,des Markgrafen
+1,des Königs
+1,des Ritters
+1,des Prinzen
+1,des Fürst
+1,der Baronin
+1,der Gräfin
+1,der Herzogin
+1,der Markgräfin
+1,der Königin
+1,der Dame
+1,der Prinzessin
+1,der Fürstin
+
+;EvilPersonM
+1,[NeutralPersonM]
+1,Tyrann
+1,Schattenherr
+
+;EvilPersonF
+1,[NeutralPersonF]
+1,Hexe
+1,Medusa
+
+;EvilPersonG
+1,[NeutralPersonG]
+1,des Tyrannen
+1,des Schattenherrn
+1,der Hexe
+1,der Medusa
+
+;NeutralNounM
+1,[Things.MiscM]
+1,[Things.WeaponM]
+1,[Things.Time]
+
+;NeutralNounF
+1,[Things.MiscF]
+1,[Things.WeaponF]
+
+;GoodNounM
+1,[Things.ReligionM]
+1,Engel
+1,Segen
+1,Schatz
+1,Schützer
+1,Adler
+1,Stern
+1,Schwan
+1,Sieg
+1,Triumpf
+1,Sonnenaufgang
+
+;GoodNounF
+1,Blüte
+1,Freude
+1,Taube
+1,Blume
+1,Glücksfee
+1,Freiheit
+1,Liebe
+1,Nachtigall
+1,Rose
+1,Sonne
+1,Erlösung
+
+;EvilNounM
+1,Tod
+1,Dämon
+1,Teufel
+1,Lokust
+1,Mond
+1,Schlächter
+1,Sensenmann
+1,Klabautermann
+1,Skorpion
+1,Schädel
+1,Terror
+
+;EvilNounF
+1,Klaue
+1,Hydra
+1,Plage
+1,Rache
+1,Hölle
+1,Drohung
+1,Todesfee
+1,Schlange
+
+;EvilAdj
+1,[NeutralAdj]
+1,wütend
+1,bitter
+1,blutend
+1,blutig
+1,dunkl
+1,grauenvoll
+1,grausig
+1,geisterhaft
+1,schrecklich
+1,gnadenlos
+1,finster
+1,trauernd
+1,rachsüchtig
+1,schreiend
+1,hasserfüllt
+1,todbringend
+1,verwesned
+
+;GoodAdj
+1,schön
+1,gesegnet
+1,gutmütig
+1,reich
+1,elyisch
+1,erhaben
+1,gallant
+1,golden
+1,lustig
+1,fest
+1,standhaft
+1,friedlich
+1,loyal
+1,gnädig
+1,hübsch
+1,scheinend
+1,süß
+1,lieblich
+1,fein
+1,tapfer
+1,frei
+
+;NeutralAdj
+1,korallenblau
+1,tanzend
+1,widerspenstig
+1,fliegend
+1,kaiserlich
+1,unbesiegbar
+1,ehern
+1,glücklich
+1,mächtig
+1,alt
+1,stolz
+1,königlich
+1,salzig
+1,nass
+1,still
+1,singend
+1,leicht
+1,mutig
+1,schnell
+
+;NameF
+1,Angela
+1,Amelia
+1,Anne
+1,Belinda
+1,Cassandra
+1,Catherine
+1,Elizabeth
+1,Helene
+1,Horatia
+1,Isabella
+1,Jane
+1,Louise
+1,Lucinda
+1,Maria
+1,Mary
+1,Matilda
+1,Sarah
+1,Vanessa
+
+;NameM
+1,Bernard
+1,Bradford
+1,Charles
+1,Edward
+1,Garrick
+1,George
+1,Griffith
+1,Henry
+1,James
+1,John
+1,Julian
+1,Patrick
+1,Paul
+1,Richard
+1,Reuben
+1,Roger
+1,Rupert
+1,Simon
+1,Stephen
+1,Stuart
+1,Timothy
+1,Thomas
+1,Wesley
+1,William
+

@@ -1,0 +1,50 @@
+# Castles
+#
+# Descriptions of castles and keeps that
+# a party may encounter while travelling
+# through the countryside.
+#
+# HTML-formatted
+#
+# Copyright 1998 Bruce A. Gulke
+#
+
+:Start
+1-4,[Size][Condition]. Banners flying over the ramparts are of [CoatsOfArms.Start]. {CR~}<b>Occupants: [Noble Household.Start]
+5-7,[Size][Condition]. It is surrounded by [Surroundings]. {CR~}<b>Occupants: [Occupants]
+8-11,[Size][Condition]. {CR~} Occupants: None.
+12-14,[Size][Condition]. It is surrounded by [Surroundings]. {CR~} Occupants: None.
+15-17,[Size][Condition]. It is surrounded by [Surroundings]. Banners flying over the ramparts are of [CoatsOfArms.Start]. {CR~} Occupants: [Noble Household.Start]
+18-20,[Size][Condition]. {CR~} Occupants: [Occupants]
+
+:Size
+1-2,a small keep
+3-5,a humble manor
+6-9,a small castle
+10-14,a good-sized castle
+15-17,a large citadel
+18-19,an impressive stronghold
+20,a mighty fortress
+
+:Condition
+1-9,
+10-14,, which has seen better days
+15-17,, apparently newly constructed
+18-20,, crumbling and in disrepair
+
+:Surroundings
+1-6,a moat
+7-15,a crenelated wall
+16-20,a many-towered wall
+
+:Occupants
+1,A bandit horde.
+2,A necromancer and his dark minions.
+3,A legion of orcs.
+4,A minor warlord and his soldiers.
+5,A band of mercenaries.
+6,A powerful enchantress and her servants.
+7,A vampire, his minions, and some of their victims.
+8,A local baronial garrison.
+9,A merchant prince and his servants.
+10,A slave trader, his men, and his "merchandise".

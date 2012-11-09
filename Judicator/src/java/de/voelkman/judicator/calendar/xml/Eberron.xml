@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<CalendarTable build="30.03.2009 22:20"
+	class="de.voelkman.rpg.arbiter.plugin.tabler.data.CalendarTable"
+	version="1.0.0">
+
+	<array name="days">
+		<item>Sul</item>
+		<item>Mol</item>
+		<item>Zol</item>
+		<item>Wir</item>
+		<item>Zor</item>
+		<item>Far</item>
+		<item>Sar</item>
+	</array>
+	
+	<table name="anualdays">
+		<array>
+			<item>1</item>
+			<item>Neujahr</item>
+			<item></item>
+		</array>
+	</table>
+	<table name="moons">
+		<array>
+			<item>Nymm</item>
+			<item>28.0</item>
+			<item>0.0</item>
+			<item>ffffaa</item>
+			<item>43</item>
+		</array>
+		<array>
+			<item>Sypheros</item>
+			<item>35.0</item>
+			<item>1.0</item>
+			<item>999999</item>
+			<item>59</item>
+		</array>
+		<array>
+			<item>Therendor</item>
+			<item>42.0</item>
+			<item>1.0</item>
+			<item>dddddd</item>
+			<item>56</item>
+		</array>
+		<array>
+			<item>Rhaan</item>
+			<item>49.0</item>
+			<item>2.0</item>
+			<item>ccccff</item>
+			<item>40</item>
+		</array>
+		<array>
+			<item>Olarune</item>
+			<item>56.0</item>
+			<item>2.0</item>
+			<item>ffdd99</item>
+			<item>46</item>
+		</array>
+		<array>
+			<item>Eyre</item>
+			<item>63.0</item>
+			<item>2.0</item>
+			<item>eeeeee</item>
+			<item>59</item>
+		</array>
+		<array>
+			<item>Vult</item>
+			<item>70.0</item>
+			<item>3.0</item>
+			<item>998888</item>
+			<item>59</item>
+		</array>
+		<array>
+			<item>Zarantyr</item>
+			<item>77.0</item>
+			<item>3.0</item>
+			<item>eeeeff</item>
+			<item>62</item>
+		</array>
+		<array>
+			<item>Aryth</item>
+			<item>84.0</item>
+			<item>3.0</item>
+			<item>ff990</item>
+			<item>50</item>
+		</array>
+		<array>
+			<item>Dravago</item>
+			<item>91.0</item>
+			<item>3.0</item>
+			<item>ffccff</item>
+			<item>100</item>
+		</array>
+		<array>
+			<item>Lharvion</item>
+			<item>98.0</item>
+			<item>4.0</item>
+			<item>dddddd</item>
+			<item>68</item>
+		</array>
+		<array>
+			<item>Barrakas</item>
+			<item>105.0</item>
+			<item>4.0</item>
+			<item>eeeeee</item>
+			<item>75</item>
+		</array>
+	</table>
+	<table name="constellation">
+		<array>
+			<item>Daanvi [Order]</item>
+			<item>134400.0</item>
+			<item>33600.0</item>
+			<item>50400.0</item>
+		</array>
+		<array>
+			<item>Dal Quor [Dreams]</item>
+			<item>1.0</item>
+			<item>1.0</item>
+			<item>0.0</item>
+		</array>
+		<array>
+			<item>Dolurrh [Dead]</item>
+			<item>33600.0</item>
+			<item>336.0</item>
+			<item>8559.0</item>
+		</array>
+		<array>
+			<item>Fernia [Fire]</item>
+			<item>1680.0</item>
+			<item>28.0</item>
+			<item>1344.0</item>
+		</array>
+		<array>
+			<item>Irian [Day]</item>
+			<item>1008.0</item>
+			<item>10.0</item>
+			<item>420.0</item>
+		</array>
+		<array>
+			<item>Kythri [Chaos]</item>
+			<item>0.0</item>
+			<item>0.0</item>
+			<item>0.0</item>
+		</array>
+		<array>
+			<item>Lamannia [Twilight]</item>
+			<item>364.0</item>
+			<item>7.0</item>
+			<item>94.0</item>
+		</array>
+		<array>
+			<item>Mabar [Night]</item>
+			<item>1680.0</item>
+			<item>3.0</item>
+			<item>422.0</item>
+		</array>
+		<array>
+			<item>Risia [Ice]</item>
+			<item>1680.0</item>
+			<item>28.0</item>
+			<item>505.0</item>
+		</array>
+		<array>
+			<item>Shavarath [Battle]</item>
+			<item>12096.0</item>
+			<item>336.0</item>
+			<item>4032.0</item>
+		</array>
+		<array>
+			<item>Syrania [Sky]</item>
+			<item>3360.0</item>
+			<item>1.0</item>
+			<item>841.0</item>
+		</array>
+		<array>
+			<item>Thelanis [Faerie]</item>
+			<item>75600.0</item>
+			<item>2352.0</item>
+			<item>20076.0</item>
+		</array>
+		<array>
+			<item>Xoriat [Madness]</item>
+			<item>2352000.0</item>
+			<item>336.0</item>
+			<item>588168.0</item>
+		</array>
+	</table>
+	<item name="mykradoriancorrectionindays">1437576</item>
+	<item name="monthdaymode">cut</item>
+	<table name="derivations">
+		<array>
+			<item>Year Khorvaire</item>
+			<item>YK</item>
+			<item>0</item>
+		</array>
+	</table>
+	<table name="months">
+		<array>
+			<item>Zarantyr</item>
+			<item>28</item>
+		</array>
+		<array>
+			<item>Olarune</item>
+			<item>28</item>
+		</array>
+		<array>
+			<item>Therendor</item>
+			<item>28</item>
+		</array>
+		<array>
+			<item>Eyre</item>
+			<item>28</item>
+		</array>
+		<array>
+			<item>Dravago</item>
+			<item>28</item>
+		</array>
+		<array>
+			<item>Nymm</item>
+			<item>28</item>
+		</array>
+		<array>
+			<item>Lharvion</item>
+			<item>28</item>
+		</array>
+		<array>
+			<item>Barrakas</item>
+			<item>28</item>
+		</array>
+		<array>
+			<item>Rhaan</item>
+			<item>28</item>
+		</array>
+		<array>
+			<item>Sypheros</item>
+			<item>28</item>
+		</array>
+		<array>
+			<item>Aryth</item>
+			<item>28</item>
+		</array>
+		<array>
+			<item>Vult</item>
+			<item>28</item>
+		</array>
+	</table>
+</CalendarTable>

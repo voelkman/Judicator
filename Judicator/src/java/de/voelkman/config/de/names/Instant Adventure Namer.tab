@@ -1,0 +1,179 @@
+#"Zwischenabenteuerideen" publish
+#
+# Instant Adventure Namer
+#
+# This is a fun little table intended to generate names of
+# adventure modules (it's possible to see some familiar names
+# with this one). Nothing earth-shattering here, but some
+# of the results might inspire you!
+#
+# By Bruce A. Gulke, 2004
+#Not translated due to lack of need
+
+
+%gen1%[Gender]
+%gen2%[Gender]
+
+;Gender
+1,M
+2,F
+3,N
+
+:Article
+1,{If~%gen1%=M,Der}{If~%gen1%=F,Die}{If~%gen1%=N,Das}
+
+:Genitiv
+1,{If~%gen2%=M,des}{If~%gen2%=F,der}{If~%gen2%=S,des}
+
+:Dativ
+1,{If~%gen1%=M,dem}{If~%gen1%=F,der}{If~%gen1%=N,dem}
+
+:DativOrt
+1,{If~%gen2%=M,am}{If~%gen2%=F,an der}{If~%gen2%=S,am}
+
+:DativDest
+1,{If~%gen2%=M,vom}{If~%gen2%=F,von der}{If~%gen2%=S,vom}
+
+:Start
+1,{Cap~[Action]} [Teil2]
+1-4,[Article]{Select~{Dice~1d3},1, ,2, ,3, [Adjective]e }{CapEachWord~{ChooseFrom~Geography%gen1%,Things.Building%gen1%,Things.Place%gen1%,Things.People%gen1%,Things.Misc%gen1%}} [Teil2]
+1,Flucht [Teil3]
+1,{CapEachWord~{Select~{Dice~1d3},1,,2,,3,[Adjective]e }[Things.PeoplePl]} [Teil2]
+1,[Journey] {If~%gen1%=M,zum}{If~%gen1%=F,zur}{If~%gen1%=N,zum} [Adjective]en {CapEachWord~{ChooseFrom~Geography%gen1%,Things.Building%gen1%,Things.Place%gen1%}}
+1,[Quest] [Dativ] [Adjective]en {CapEachWord~{ChooseFrom~Geography%gen1%,Things.Building%gen1%,Things.Place%gen1%,Things.People%gen1%,Things.Misc%gen1%}}
+1-2,{Cap~[Secret]} [Teil2]
+
+
+:Teil2
+1,des {Cap~[RulerMG]} der {Cap~[Creatures.Plural]}
+2,der {Cap~[RulerF]} der {Cap~[Creatures.Plural]}
+3,von [Things.Gods]
+4-5,von [Name]
+5-6,[Genitiv] {Select~{Dice~1d2},1,[Adjective]en ,2,}{Cap~[Things.ElementG%gen2%]}
+6-7,der [Adjective]en {Cap~[Creatures.Plural]}
+7-8,[DativOrt] {Cap~[Creatures.Prefix][Geography%gen2%]}
+
+:Teil3
+1,[DativDest] {Cap~{ChooseFrom~Things.Building%gen2%,Things.Place%gen2%}} von [Name]
+1,[DativDest]{Select~{Dice~1d3},1, ,2, ,3, [Adjective]en }{Cap~[Creatures.Prefix][Geography%gen2%]}
+1,[DativDest] [Adjective]en {Cap~{ChooseFrom~Things.Building%gen2%,Things.Place%gen2%}}
+
+:Name
+1,[Fantasy Names.Start]
+1,[Albion.Start]
+1,[Dwarves.Start]
+1,[Elves.Start]
+1,[Chinese.Start]
+1,[Deverry.Start]
+1,[German.Start]
+1,[Greek.Start]
+1,[Hobbits.Start]
+1,[Dragon.Start]
+1,[Japanese.Start]
+1,[Orc Names.Start]
+1,[Standard.Start]
+1,[Kerrel.Start]
+
+:Action
+1,Der Angriff
+2,Die Wut
+3,Die Rache
+4,Die Vergeltung
+5,Der Hass
+
+:Adjective
+1,{ChooseFrom~Adjective.Color,Adjective.Metal,Adjective.Dark}
+
+:Building
+1,Abtei
+2,Schloss
+3,Schmiede
+4,Halle
+5,Festung
+6,Haus
+7,Labyrinth
+8,Palast
+9,Schrein
+10,Stätte
+11,Wall
+12,Tempel
+13,Grab
+14,Turm
+15,Kammer
+
+:Color
+1,[Adjective.Color_Metal]
+
+:Creature
+1,[Creatures.Animal]
+2,[Creatures.FantasyM]
+
+:Escape
+1,ausbruch
+2,flucht
+
+:GeographyM
+5,hügel
+6,see
+7,berg
+8,fluss
+3,wald
+1,teich
+1,pass
+1,pfad
+
+:GeographyF
+1,schlucht
+2,wüste
+4,gletscherspalte
+1,lichtung
+1,strasse
+1,bucht
+1,ebene
+
+:GeographyN
+9,meer
+1,loch
+1,feld
+1,gebiet
+1,areal
+1,tal
+1,gebirge
+
+
+:Journey
+1,Abstieg
+2-7,{Cap~[Things.TravelPl]}
+
+:Monster
+1,[Creatures.FantasyM]
+2,demon
+3,drow
+4,riesen
+8,vampir
+
+:Quest
+1,Auf der Suche nach
+2,Forschung nach
+
+:RulerMG
+1,gottes
+2,herzogs
+3,königs
+4,herren
+5,meisters
+6,herrschers
+
+:RulerF
+1,göttin
+2,herzogin
+3,königin
+4,herrin
+5,meisterin
+7,herrscherin
+
+:Secret
+1,mysterium
+2-3,rätsel
+4-5,geheimnis
+6,fluch

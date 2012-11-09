@@ -1,0 +1,52 @@
+#"Mentale Krankheiten" publish 
+# Mental Disorders
+#
+# Potential problems for PCs who go insane, see
+#  something they can't handle, etc.
+#
+# Copyright 1998 Bruce A. Gulke
+#
+
+:Start
+1,{Cap~[Phobia]}
+2,{Cap~[Disorder]}
+
+:Disorder
+1,Amnesie
+2,Katatonie
+3,Demenz
+4,Halluzinationen
+5,krankhaften Fetischismus
+6,Kleptomanie
+7,manischer Depression
+8,Größenwahnsinn
+9,Paranoia
+10,Schizophrenie
+11,Blutlust
+12,krankhafte Neugier
+
+;Kind
+1-2,phobie
+1,philie
+1,manie
+
+:Phobia
+1,acro[Kind] (Höhen)
+2,agora[Kind] (offene Plätze)
+3,ailuro[Kind] (Katzen)
+4,arachno[Kind] (Spinnen)
+5,claustro[Kind] (enge Räume)
+6,clino[Kind] (Betten)
+7,dendro[Kind] (Bäume)
+8,entomo[Kind] (Insekten)
+9,gephyrdo[Kind] (Brückenüberquerung)
+10,hemato[Kind] (Blut)
+11,mono[Kind] (Alleinsein)
+12,necro[Kind] (Totes)
+13,ophio[Kind] (Schlangen)
+14,pyro[Kind] (Feuer)
+15,scoto[Kind] (Dunkelheit)
+16,thalasso[Kind] (Meer)
+17,vestio[Kind] (Kleidung)
+19,xeno[Kind] (Fremde)
+20,zoo[Kind] (Tiere)

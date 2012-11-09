@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE languages SYSTEM "dtd/languages.dtd">
+<languages>
+	<family name="Elfisch">
+		<dialect name="Hoch-">
+			<language>Alayani</language>
+			<language>Quenya</language>
+		</dialect>
+		<dialect name="Nieder-">
+			<language>Oragayani</language>
+			<language>Sindarin</language>
+		</dialect>
+		<dialect name="Dunkel-">
+			<language>Uruguhani</language>
+		</dialect>
+		<dialect name="Alt-">
+			<language>ye'Alayani</language>
+		</dialect>
+	</family>
+	<family name="Kobold" difficulty="2">
+		<dialect name="Li">
+			<language>Li'Endi</language>
+		</dialect>
+	</family>
+	<family name="Handel">
+		<dialect name="Mykrador">
+			<language>Galdan</language>
+		</dialect>
+		<dialect name="Eberron">
+			<language>Komon</language>
+		</dialect>
+		<dialect name="Cerilia">
+			<language>Dolban</language>
+		</dialect>
+	</family>
+	<family name="Keltisch">
+		<dialect name="Mykrador">
+			<language>Skaelde</language>
+		</dialect>
+		<dialect name="Cerilia">
+			<language>Rjurik</language>
+		</dialect>
+	</family>
+	<family name="Nitaja">
+		<dialect name="Nordland">
+			<language>Nitaja</language>
+			<language>Brecht</language>
+			<language>Anuirisch</language>
+			<language>Khorvaire</language>
+		</dialect>
+		<dialect name="Südland">
+			<language>Enitaja</language>
+			<language>Khinasi</language>
+		</dialect>
+	</family>
+	<family name = "Antik">
+		<dialect name="Alte Sprache">
+			<language>Arcana</language>
+			<language>Heraldir</language>
+			<language>Clericus</language>
+		</dialect>
+	</family>
+	<family name = "Halbling">
+		<dialect name="Sumarisch">
+			<language>Suma</language>
+		</dialect>
+		<dialect name="Quaintain">
+			<language>Hablar</language>
+		</dialect>
+	</family>
+		<family name = "Riesisch">
+		<dialect name="Nord-">
+			<language>Ulbarak</language>
+		</dialect>
+		<dialect name="Süd-">
+			<language>U'Xend'rak</language>
+		</dialect>
+	</family>
+	<family name = "Shou">
+		<dialect name="Shoudo">
+			<language>Toshido</language>
+			<language>Kao te Shou</language>
+		</dialect>
+		<dialect name="Tai'sho">
+			<language>Lidahan</language>
+		</dialect>
+	</family>
+	<family name = "Finsternis">
+		<dialect name="Morrogh">
+			<language>Morrogh</language>
+		</dialect>
+		<dialect name="Vorgaar">
+			<language>Vos</language>
+		</dialect>
+	</family>
+	<family name = "Goblinoid">
+		<dialect name="Ork">
+			<language>Khruulz</language>
+		</dialect>
+		<dialect name="Oger">
+			<language>Uruk</language>
+		</dialect>
+		<dialect name="Troll">
+			<language>Troll</language>
+		</dialect>
+	</family>
+	<family name = "Zwergisch">
+		<dialect name="Hoch-">
+			<language>Kazrak</language>
+		</dialect>
+		<dialect name="Alt-">
+			<language>Aku-Kazrak</language>
+		</dialect>
+		<dialect name="Dunkel-">
+			<language>Dimbah'dur</language>
+		</dialect>
+	</family>
+</languages>

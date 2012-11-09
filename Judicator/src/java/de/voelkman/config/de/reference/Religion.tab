@@ -1,0 +1,54 @@
+# Religion
+#
+# Various tables intended for use by other tables
+#
+# (http://www.mythosa.net)
+#
+# Copyright 2004 Bruce A. Gulke
+#
+:Start
+1-4,[Good]
+1-2,[Evil]
+1,[Neutral]
+
+;Deities
+1,[Good]
+
+;Good
+1,[MykradorGood]
+
+;Evil
+1,[MykradorEvil]
+
+;Neutral
+1,[MykradorNeutral]
+
+;MykradorGood
+1,Myrasil
+1,Feonor
+1,Talan Malira
+1,Rigonon
+1,Argir
+1,Grenava
+
+;MykradorEvil
+1,Mordock
+1,Skulleus
+1,Azrahel
+1,Gorduran
+1,Kraahl
+1,Link
+1,Horka Zorvana
+
+;MykradorNeutral
+1,Sharlin Darn
+
+;EberronGood
+1-9,Souvereign Host
+
+;EberronEvil
+1-6,Dark Six
+
+;EberronNeutral
+1,Druid Sects
+

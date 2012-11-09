@@ -1,0 +1,301 @@
+#"Bücher" publish
+# Book Titles
+#
+# Names of books one might find in a library
+#
+# Copyright 2005 Bruce A. Gulke
+#
+
+;Start
+1,[Religion]
+1,[Travelling]
+1,[Biology]
+1,[Magic]
+1,[Craftwork]
+1,[Tales]
+1,[Art]
+1,[Historical]
+1,[Geography]
+1,[Linguistics]
+
+
+;Religion
+1,Das Leben von [Formal Names.StartGen]
+1,{Cap~{ChooseFrom~Things.ReligionF,Things.ReligionM,Things.ReligionN,Things.ReligionPl}} [Rel]
+1,{Cap~[Adj]}e {Cap~[Things]} [Rel]
+1,{Cap~[Things]} [Rel]
+
+;Travelling
+1,{Cap~[Things.TravelPl]} von [Fantasy Names.Start]
+
+;Biology
+1,{CapEachWord~[Bio]} [Creatures.Genitiv]
+1,{Cap~[Creatures.Prefix]}{LCase~[Things]}
+
+;Magic
+1,{Cap~[Things]} der [Adj]en {Cap~[Things.Arcana]} 
+1,{Cap~[Things]} der {Cap~[Things.Arcana]} 
+1,{Cap~[Adj]}e {Cap~[Things]} [Regarding] {Cap~[Things.Arcana]}
+1,{Cap~[Things]} [Regarding] {Cap~[Things.Arcana]}
+
+;Craftwork
+1,{Cap~[Guide]} {Cap~[Things.Crafts]}
+
+;Tales
+1,{Cap~[Story]} vom [Adjective.Start]en {Cap~[Things.M]}
+1,{Cap~[Story]} von der [Adjective.Start]en {Cap~[Things.F]}
+1,{Cap~[Story]} vom [Adjective.Start]en {Cap~[Things.N]}
+1,Der {If~{Dice~1d2}>1,[Adjective.Start]}e {Cap~[Things.M]} {If~{Dice~1d2}>1,von [Standard.Start]}
+1,Die {If~{Dice~1d2}>1,[Adjective.Start]}e {Cap~[Things.F]} {If~{Dice~1d2}>1,von [Standard.Start]}
+1,Das {If~{Dice~1d2}>1,[Adjective.Start]}e {Cap~[Things.N]} {If~{Dice~1d2}>1,von [Standard.Start]}
+
+;Art
+1,{Cap~[Adjective.Poetry]}e {Cap~[Poetry]}
+
+;Historical
+1,{Cap~[History]} der [HistType]
+1,{Cap~[Adj]}e {Cap~[Things]} der [HistType]
+1,{Cap~[Things]} der [HistType]
+1,{Cap~[Adjective.Fame]}e {Cap~[Things.PeoplePl]} der [HistType]
+
+;Geography
+1,Atlas [Geo] 
+1-2,{Cap~[GeoThings]} [Geo]
+1,{Cap~[Dictionary]} der [LanguageAdj]en {Cap~[Words]}
+
+;Linguistics
+1,Wörterbuch {Cap~[Language]}-{Cap~[Language]}
+
+;Adj
+1,[Adjective.Mystic]
+2,[Adjective.Fame]
+3-4,[Adjective.Poetry]
+5,[Adjective.Dark]
+
+;Things
+1,Fablen
+1,Legenden
+1,Lehre
+1,Mysterien
+1,Mythen
+1,Kräfte
+1,Riten
+1,Rituale
+1,Sagen
+1,Geheimnisse
+1,Regeln
+1,Geschichten
+1,Traditionen
+
+;Domain
+1,Luft
+1,Chaos
+1,Todes
+1,Zerstörungs
+1,Erd
+1,Finsternis
+1,Feuer
+1,Licht
+1,Wissens
+1,Rechts
+1,Liebes
+1,Mond
+1,Natur
+1,Schutz
+1,Stärke
+1,Sonnen
+1,Reisen
+1,Betrugs
+1,Kriegs
+
+;Rel
+1,des [Domain]kults
+1,der [Domain]kulte
+1,des [Domain]gottes
+1,der [Domain]götter
+1,der [Domain]gottheit
+1,der [Domain]gottheiten
+1,des [Domain]glaubens
+1,der [Domain]heilgtümer
+1,der [Domain]göttin
+1,der [Domain]göttinnen
+1,des [Domain]himmels
+1,der [Domain]sekten
+1,der [Domain]religion
+1,der [Domain]religionen
+
+;Geo
+1,der {If~{Dice~1d4}>1,[Adj]en }Höhlen
+1,der {If~{Dice~1d3}>1,[Adj]en }Wüste
+1,des {If~{Dice~1d5}>1,[Adj]en }Waldes
+1,der {If~{Dice~1d5}>1,[Adj]en }Hügel
+1,des {If~{Dice~1d3}>1,[Adj]en }Moors
+1,des {If~{Dice~1d5}>1,[Adj]en }Sumpfes
+1,des {If~{Dice~1d4}>1,[Adj]en }Gebirges
+1,der {If~{Dice~1d4}>1,[Adj]en }Ebenen
+1,der {If~{Dice~1d3}>1,[Adj]en }Savanne
+
+;GeoThings
+1,Tiere
+1,Klima
+1,Gefahren
+1,Kräuter
+1,Geschichte
+1,Untiere
+1,Völker
+1,Reichtümer
+1,Ruinen
+1,Siedlungen
+1,Geschichten
+1,Wetter
+
+;Dictionary
+1,Wörterbuch
+1,Nachschlagewerk
+1,Lexikon
+1,Sammelung
+
+;Words
+1,Briefe
+1,Sprichwörter
+1,Zitate
+1,Wörter
+
+;Bio
+1,Tierkunde
+1,Biologie
+1,Essgewohnheiten
+1,Umwelt
+1,Paarungsrituale
+
+;Guide
+1,Buch der
+1,Handbuch der
+1,Wegweiser zur
+1,Kompendium über
+1,Schriften der
+1,Einführung in die
+1,Weiterführende
+1,Professionelle
+1,Grundlagen der
+1,Almanach der
+1,Band {Dice~1d8} über
+
+;Regarding
+1-3,über
+4,bezüglich
+
+;History
+1,Architektur
+1,Armeen
+1,Kunst
+1,Gedanken
+1,Städte
+1,Küche
+1,Bräuche
+1,Tänze
+1,Heraldik
+1,Geschichte
+1,Musik
+1,Sprachen
+1,Herrscher
+1,Schiffe
+1,Handel
+1,Schätze
+1,Kriege
+1,Waffen
+
+;Language
+1,aquanisch
+1,auranisch
+1,himmlisch
+1,allgemein
+1,dragonisch
+1,druidisch
+1,kazrak
+1,alayani
+1,Hyurdan
+1,gnollisch
+1,gnomisch
+1,goblinoid
+1,adurisch
+1,orkisch
+1,sarlonisch
+1,drago
+1,nitaja
+1,enitaja
+1,morrogh
+1,alte Sprache
+1,arcana
+
+;LanguageAdj
+1,aquanisch
+1,auranisch
+1,himmlisch
+1,allgemein
+1,dragonisch
+1,druidisch
+1,kazrak
+1,alayani
+1,Hyurdan
+1,gnollisch
+1,gnomisch
+1,goblinoid
+1,adurisch
+1,orkisch
+1,sarlonisch
+1,dragonisch
+1,nitajanisch
+1,enitajaisch
+1,finsteren
+1,alt
+1,arcan
+
+;Story
+1,Die Legende
+1-2,Die Geschichte
+1-2,Kurzgeschichten
+1-2,Märchen
+1,Annekdoten
+1,Die Fabel
+1,Das Lied
+
+;Poetry
+1,Balladen
+1,Idyllen
+1,Gedichte
+1,Epic
+1,Lieder
+1,Verse
+
+;HistType
+1,Alten Welt
+1,[Adjective.Direction]en Ebenen
+1,Chaoslande
+1,Wüstenstämme
+1,[Adjective.Direction]en Königreiche
+1,Kaiserreich
+1,Inselreiche
+1,Berg Clans
+1,[Adjective.Direction]en Kulturen
+1,[Adjective.Direction]en Regionen
+1,[Adjective.Direction]en Reiche
+1,[NonHuman]
+
+
+;NonHuman
+1,Drachen
+1,Zwerge
+1,Elfen
+1,Riesen
+1,Gnome
+1,Orks
+1,Trolle
+1,Unterwelt
+
+
+;Activity
+1,kämpfen
+1,jagen
+1,überleben
+1,reisen

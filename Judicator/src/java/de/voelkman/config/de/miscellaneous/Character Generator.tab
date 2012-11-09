@@ -1,0 +1,200 @@
+#"7-Sentence Character" publish single
+
+%gender%{Select~{Dice~1d2},1,M,2,F}
+%align1%{Select~{Dice~1d3},1,C,2,N,3,L}
+%align2%{Select~{Dice~1d3},1,E,2,N,3,G}
+%set%{Select~{Dice~1d2},1,War,2,Peace}
+%cname%[Name]
+
+%adj1%[Adjective.Trait%align1%]
+%adj2%[Adjective.Trait%align2%]
+
+;Start
+1,{Select~x,x,%cname%}{CR~}{Select~x,x,%cname%}, [History], [Occupation].{CR~}
+_[Physical].{CR~}
+_[AttributesSkills].{CR~}
+_[Interaction].{CR~}
+_[ValuesMotivation].{CR~}
+_[Knowledge].{CR~}
+_[Feature].{CR~}
+
+;Name
+1,[German.Start]
+
+;Occupation
+1-2,ist Geselle der {Cap~[Things.Crafts]}
+1-2,beherrscht {Cap~[Things.Crafts]}
+1-3,verdient {Select~%gender%,M,sein,F,ihr} Geld mit {Cap~[Things.Crafts]}
+1-3,versucht {Select~%gender%,M,sein,F,ihr} Leben mit {Cap~[Things.Crafts]} zu bestreiten
+1-2,ist Meister der {Cap~[Things.Crafts]}
+1,hat {Select~%gender%,M,sein,F,ihr}e Ausbildung der {Cap~{ChooseFrom~Things.Crafts,Things.Arcana}} abgebrochen
+1,studiert die {Cap~{ChooseFrom~Things.Crafts,Things.Arcana}}
+1,versucht auf {Select~%gender%,M,sein,F,ihr}en {Cap~[Things.TravelPl]} mehr über die {Cap~{ChooseFrom~Things.Crafts,Things.Arcana}} zu erfahren.
+1-6,wandelt auf dem Pfad des [Prof]
+
+;Prof
+1-2,Kriegers
+1,Söldners
+1,Mönchs
+1,Priesters
+1,Waldläufers
+1,Barden
+1,Gauklers
+1,Diebes
+1,Druiden
+1,Wanderpredigers
+1,Schwertmeisters
+1,Axtkämpfers
+1,Kopfgeldjägers
+1,Zauberers
+1,Hexers
+1,Necromanten
+1,Wandermönchs
+
+;History
+1,{Select~%gender%,M,dessen,F,deren} Eltern auf geheimnisvolle Art verschwanden
+1-3,{Select~%gender%,M,der,F,die} auf der Straße aufwuchs
+1-3,{Select~%gender%,M,Sohn,F,Tochter} wohlhabender Eltern
+1-3,{Select~%gender%,M,Sohn,F,Tochter} von Sklaven
+1-2,{Select~%gender%,M,Sohn,F,Tochter} einflußreicher Eltern
+1-4,{Select~%gender%,M,Sohn,F,Tochter} armer Eltern
+1-3,{Select~%gender%,M,Sohn,F,Tochter} aus bürgerlichem Hause
+1-2,{Select~%gender%,M,Sohn,F,Tochter} aus adeligen Hause
+1,{Select~%gender%,M,Sohn,F,Tochter} von königlichem Geblüt
+1-2,{Select~%gender%,M,Sohn,F,Tochter} eines verrückten {Cap~[Things.Arcana]meisters}
+1-3,{Select~%gender%,M,Sohn,F,Tochter} eines Meisters der {Cap~[Things.Crafts]}
+
+;Physical
+1,{Select~%gender%,M,Er,F,Sie} ist [Height], [Weight] und [Hair]
+
+;AttributesSkills
+1,{Select~%gender%,M,Seine,F,Ihre} [Quality]e [Attribute] ist bekannt
+1,Bis auf {Select~%gender%,M,seine,F,ihre} [Quality]e [Attribute] ist nichts außergewöhnlich
+1,{Select~%gender%,M,Seine,F,Ihre} [Quality]e [Attribute] prägt {Select~%gender%,M,seinen,F,ihren} Alltag
+1,{Select~%gender%,M,Seine,F,Ihre} [Quality]e [Attribute] trat schon zu mehreren Ereignissen zu Tage
+1,Die [Quality]e [Attribute] ist in {Select~%gender%,M,seinen,F,ihren} Augen zugleich Fluch und Segen
+
+;Interaction
+1,{Select~%gender%,M,Seine,F,Ihre} %adj1%e{If~%adj1%!=%adj2%, und %adj2%e} Art sind so bekannt wie {Select~%gender%,M,seine,F,ihre} [Profession]
+1,{Select~%gender%,M,Seine,F,Ihre} {ChooseFrom~Adjective.Trait%align1%,Adjective.Trait%align2%}e Art und {Select~%gender%,M,seine,F,ihre} [Profession] bleiben jedem in Erinnerung
+1,Kaum jemand ahnt, wie %adj1%{If~%adj1%!=%adj2%, und %adj2%} {Select~%gender%,M,er,F,sie} sein kann
+1,Obwohl zumeist %adj1%{If~%adj1%!=%adj2%, und %adj2%}, bricht hin und wieder eine {Select~%align2%,E,[Adjective.TraitG],N,[Adjective.TraitE],G,[Adjective.TraitE]}e Art durch
+
+;ValuesMotivation
+1,{Select~%gender%,M,Seine,F,Ihre} größte Liebe gilt [Values]
+1,{Select~%gender%,M,Seine,F,Ihre} Liebe gilt neben [Values] vor allem [Values]
+1,{Select~%gender%,M,Seine,F,Ihre} Liebe gilt [Values], {Select~%gender%,M,Sein,F,Ihr} Hass [Values]
+
+;Values
+1-3,dem Kriegshandwerk
+1,{Select~%gender%,M,seiner,F,ihrer} Streitsucht
+1,dem Wein
+1,dem Bier
+1-3,dem anderen Geschlecht
+1,Personen {Select~%gender%,M,seines,F,ihres} Geschlechts.
+1-5,der Musik
+1-3,gutem Essen
+1-2,der Bildhauerei
+1-3,der Malerei
+1,der experimentellen {Cap~[Things.Crafts]}
+1,der [Adjective.Mystic]en {Cap~[Things.Arcana]}
+1-3,der Natur
+1-3,den Naturgewalten
+1-3,der Geschichte des Landes
+1-3,der Geschichte der Religionen
+1-2,der Viehzucht
+1-6,dem Thema "[Book Titles.Start]"
+1-2,dem fahrenden Volk
+1-3,dem Adel
+1-4,dem Königshaus
+1-3,den Tieren
+1-3,den Pflanzen
+1-3,dem Handwerk
+1,Hinrichtungen
+1-2,öffentlichen Prozessen
+1,exotischen Wesen
+1,Reptilien
+1,Insekten
+1,Spinnen
+
+;Knowledge
+1-4,Die örtlichen Gerüchte sind {Select~%gender%,M,sein,F,ihr} Gebiet
+1-3,Scheinbar kennt {Select~%gender%,M,er,F,sie} die Geschichte eines jeden Mitbewohners
+1-2,Allerlei Nachrichten aus dem Reich sind von {Select~%gender%,M,ihm,F,ihr} zu erfahren
+1,Tatsächlich ist {Select~%gender%,M,er,F,sie} die einzige Person im Umkreis, die die Geheimnisse [Secret] kennt
+1,Genaugenommen ist {Select~%gender%,M,er,F,sie} eine der wenigen Personen, die die Geheimnisse [Secret] kennen
+
+;Secret
+1-3,von [Herb Names.Start]
+1,über den [Adjective.Ruin]en {Cap~[Things.BuildingM]} von [TownsGerman.Start]
+1,über die [Adjective.Ruin]e {Cap~[Things.BuildingF]} von [TownsGerman.Start]
+1,über das [Adjective.Ruin]e {Cap~[Things.BuildingN]} von [TownsGerman.Start]
+1,über den [Adjective.Mystic]e {Cap~[Things.PlaceM]} namens [Standard.Start]
+1,über die [Adjective.Mystic]e {Cap~[Things.PlaceF]} namens [Standard.Start]
+1,über das [Adjective.Mystic]e {Cap~[Things.PlaceN]} namens [Standard.Start]
+1,über den Drachen [Dragon.Start]
+
+
+;Feature
+1,{Select~%gender%,M,Er,F,Sie} [Character Appearance.Special]
+
+;Height
+1,sehr klein
+2-3,klein
+4-7,von mittlerer Größe
+8-9,groß
+10,sehr groß
+
+;Weight
+1,verhältnismäßig mager
+2-3,dünn
+4-5,schlank
+6-10,hat Normalgewicht
+11-12,von stattlicher Figur
+13-14,mit sichtbaren Rundungen
+15,extrem fett
+
+:Hair
+1-5,trägt das [Character Appearance.Precolor]braune Haar [Character Appearance.Style]
+6-8,trägt das [Character Appearance.Precolor]blonde Haar [Character Appearance.Style]
+9-10,trägt das [Character Appearance.Precolor]rote Haar [Character Appearance.Style]
+11,trägt das weiße Haar [Character Appearance.Style]
+12,trägt das [Character Appearance.Precolor]graue Haar [Character Appearance.Style]
+13,hat eine Glatze
+
+;Profession
+1,Inkompetenz
+1,Unzuverlässigkeit
+1-3,Professionalität
+1-3,Fertigkeiten
+1-3,Fähigkeiten
+1,Qualitäten
+
+;Quality
+1,fehlend
+1,gut
+1,extrem
+1,enorm
+1,gering
+1,überdurchschnittlich
+1,unterdurchschnittlich
+1,unglaublich
+1,erstaunlich
+
+;Attribute
+1,Stärke
+1,Ausdauer
+1,Kraft
+1,Fingerfertigkeit
+1,Gewandtheit
+1,Geschicklichkeit
+1,Selbstbeherrschung
+1,Auffassungsgabe
+1,Intelligenz
+1,Willenskraft
+1,Ausstrahlung
+1,Erscheinung
+1,Listigkeit
+1,Führungsqualitäten
+1,Weisheit
+

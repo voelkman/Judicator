@@ -1,0 +1,22 @@
+# Temples
+# 
+# Copyright 1998 Bruce A. Gulke
+#
+
+:Start
+1,[Building] [Deity]. [Occupation]
+
+:Building
+1-6,a shrine to
+7-9,a church dedicated to
+10,a temple of
+
+:Deity
+1-7,[Religion.Deities]
+8-10,an unknown deity
+
+:Occupation
+1-5,It appears that a ceremony of some kind is currently taking place.
+6-15,The place is quiet, though obviously occupied.
+16-18,The building is crumbling and overgrown with weeds. It appears to have been deserted for some time.
+19-20,The building appears to have been abandoned recently.

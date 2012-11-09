@@ -1,0 +1,52 @@
+
+<!ELEMENT races (race+)>
+
+<!ELEMENT race (name,namegenerator,
+						energy,
+						skill,
+						intelligence,
+						charisma,
+						lifebonus,
+						spellpower?,
+						spellbonus?,
+						spells?,
+						special*,
+						age,
+						height,
+						weight,
+						freelanguagepoints,
+						languages,
+						restrictions?)>
+
+<!ELEMENT spells (spell+)>
+<!ELEMENT spell (name, type, power)>
+<!ELEMENT spellpower (type, multiplier, bonus)>
+
+<!ELEMENT restrictions (restriction*)>
+<!ELEMENT restriction (type,type2,value)>
+<!ELEMENT age (type, multiplier, bonus)>
+<!ELEMENT height (type, multiplier, bonus)>
+<!ELEMENT weight (type, multiplier, bonus)>
+<!ELEMENT languages (language*)>
+
+<!ELEMENT lifebonus (#PCDATA)>
+<!ELEMENT spellbonus (#PCDATA)>
+<!ELEMENT language (name,value)>
+
+
+<!ELEMENT energy (#PCDATA)>
+<!ELEMENT skill (#PCDATA)>
+<!ELEMENT intelligence (#PCDATA)>
+<!ELEMENT charisma (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT multiplier (#PCDATA)>
+<!ELEMENT bonus (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT power (#PCDATA)>
+<!ELEMENT special (#PCDATA)>
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT namegenerator (#PCDATA)>
+
+<!ELEMENT type2 (#PCDATA)>
+
+<!ELEMENT freelanguagepoints (#PCDATA)>
