@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<CalendarTable build="27.03.2009 16:55"
+	class="de.voelkman.rpg.arbiter.plugin.tabler.data.CalendarTable"
+	version="1.0.0">
+
+	<table name="months">
+		<array>
+			<item>Januar</item>
+			<item>31</item>
+		</array>
+		<array>
+			<item>Februar</item>
+			<item>28</item>
+		</array>
+		<array>
+			<item>März</item>
+			<item>31</item>
+		</array>
+		<array>
+			<item>April</item>
+			<item>30</item>
+		</array>
+		<array>
+			<item>Mai</item>
+			<item>31</item>
+		</array>
+		<array>
+			<item>Juni</item>
+			<item>30</item>
+		</array>
+		<array>
+			<item>Juli</item>
+			<item>31</item>
+		</array>
+		<array>
+			<item>August</item>
+			<item>31</item>
+		</array>
+		<array>
+			<item>September</item>
+			<item>30</item>
+		</array>
+		<array>
+			<item>Oktober</item>
+			<item>31</item>
+		</array>
+		<array>
+			<item>November</item>
+			<item>30</item>
+		</array>
+		<array>
+			<item>Dezember</item>
+			<item>31</item>
+		</array>
+	</table>
+	<array name="days">
+		<item>Montag</item>
+		<item>Dienstag</item>
+		<item>Mittwoch</item>
+		<item>Donnerstag</item>
+		<item>Freitag</item>
+		<item>Samstag</item>
+		<item>Sonntag</item>
+	</array>
+	<table name="specialdays">
+		<array>
+			<item>1772993</item>
+			<item>Frank the Schmitt</item>
+			<item>Is ein Geburtstagsjindl</item>
+		</array>
+	</table>
+	<table name="moons">
+		<array>
+			<item>Mond</item>
+			<item>28.4</item>
+			<item>0.0</item>
+			<item>8888ff</item>
+			<item>100</item>
+		</array>
+	</table>
+	<table name="constellation" />
+	<item name="mykradoriancorrectionindays">1039967</item>
+	<item name="monthdaymode">wrap</item>
+	<table name="derivations">
+		<array>
+			<item>Anno Domini</item>
+			<item>AD</item>
+			<item>0</item>
+		</array>
+	</table>
+</CalendarTable>

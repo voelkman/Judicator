@@ -1,187 +1,61 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<CalendarTable build="13.05.2010 21:09" class="de.voelkman.rpg.arbiter.plugin.tabler.data.CalendarTable" version="1.0.0">
-    <table name="months">
-        <array>
-            <item>Janurian</item>
-            <item>30</item>
-        </array>
-        <array>
-            <item>Fabrian</item>
-            <item>30</item>
-        </array>
-        <array>
-            <item>Marendina</item>
-            <item>30</item>
-        </array>
-        <array>
-            <item>Aran</item>
-            <item>30</item>
-        </array>
-        <array>
-            <item>May</item>
-            <item>30</item>
-        </array>
-        <array>
-            <item>Junara</item>
-            <item>30</item>
-        </array>
-        <array>
-            <item>Julai</item>
-            <item>30</item>
-        </array>
-        <array>
-            <item>Agrolai</item>
-            <item>30</item>
-        </array>
-        <array>
-            <item>September</item>
-            <item>30</item>
-        </array>
-        <array>
-            <item>Octabrian</item>
-            <item>30</item>
-        </array>
-        <array>
-            <item>Novembrian</item>
-            <item>30</item>
-        </array>
-        <array>
-            <item>Dezonora</item>
-            <item>30</item>
-        </array>
-        <array>
-            <item>Erdnacht</item>
-            <item>6</item>
-        </array>
-    </table>
-    <array name="days">
-        <item>Montag</item>
-        <item>Duatag</item>
-        <item>Tretag</item>
-        <item>Feertag</item>
-        <item>Faantag</item>
-        <item>Secatag</item>
-        <item>Heptag</item>
-        <item>Octag</item>
-        <item>Neutag</item>
-        <item>Decatag</item>
-    </array>
-    <table name="specialdays">
-        <array>
-            <item>1766320</item>
-            <item/>
-            <item/>
-        </array>
-    </table>
-    <table name="anualdays">
-        <array>
-            <item>0</item>
-            <item>Neujahr</item>
-            <item>Alle Licht-Gläubigen feiern das Ende der Erdnacht.</item>
-        </array>
-        <array>
-            <item>22</item>
-            <item>Geburtstag Tonogamas</item>
-            <item>An diesem Tag muss dem Imperator Benjaidons von jedem Bürger ein Geschenk gemacht werden.</item>
-        </array>
-        <array>
-            <item>44</item>
-            <item>Sieg über die Finsternis</item>
-            <item>An diesem Tag verbannte Shira Bergquell vor 1417 Jahren den Hexenkönig aus dem Land. Man feiert den Tag, indem man der Sage lauscht.</item>
-        </array>
-        <array>
-            <item>74</item>
-            <item>Frühlingsanfang</item>
-            <item>In den Dreilanden und Sumarien feiert man an großen Tafeln.</item>
-        </array>
-        <array>
-            <item>93</item>
-            <item>Waldlandfeste</item>
-            <item/>
-        </array>
-        <array>
-            <item>150</item>
-            <item>Tag der Myrasil</item>
-            <item/>
-        </array>
-        <array>
-            <item>168</item>
-            <item>Zusammenschluss der Dreilande</item>
-            <item/>
-        </array>
-        <array>
-            <item>194</item>
-            <item>Mittsommertag</item>
-            <item/>
-        </array>
-        <array>
-            <item>202</item>
-            <item>Jahrmarkt in Tharse</item>
-            <item/>
-        </array>
-        <array>
-            <item>207</item>
-            <item>Ritterspiele in Alvandar</item>
-            <item/>
-        </array>
-        <array>
-            <item>212</item>
-            <item>Freitag</item>
-            <item/>
-        </array>
-        <array>
-            <item>209</item>
-            <item>Tag der Freiheit</item>
-            <item/>
-        </array>
-        <array>
-            <item>240</item>
-            <item>Tag der Jagd</item>
-            <item/>
-        </array>
-        <array>
-            <item>269</item>
-            <item>Argir-Danktag</item>
-            <item/>
-        </array>
-        <array>
-            <item>282</item>
-            <item>Walpurgisnacht</item>
-            <item/>
-        </array>
-        <array>
-            <item>285</item>
-            <item>Befreiung Calamaars</item>
-            <item/>
-        </array>
-        <array>
-            <item>292</item>
-            <item>Fackelzüge</item>
-            <item/>
-        </array>
-        <array>
-            <item>353</item>
-            <item>Die brennenden Feuer</item>
-            <item/>
-        </array>
-    </table>
-    <table name="moons">
-        <array>
-            <item>Mond</item>
-            <item>30.5</item>
-            <item>0.0</item>
-            <item>8888ff</item>
-            <item>100</item>
-        </array>
-    </table>
-    <table name="constellation"/>
-    <item name="mykradoriancorrectionindays">0</item>
-    <item name="monthdaymode">cut</item>
-    <table name="derivations">
-        <array>
-            <item>nach dem Chaos</item>
-            <item>ndC</item>
-            <item>4827</item>
-        </array>
-    </table>
-</CalendarTable>
+<?xml version="1.0" encoding="UTF-8"?>
+<CalendarConfig>
+    <months>
+        <month name="Janurian" days="30"/>
+        <month name="Fabrian" days="30"/>
+        <month name="Marendina" days="30"/>
+        <month name="Aran" days="30"/>
+        <month name="May" days="30"/>
+        <month name="Junara" days="30"/>
+        <month name="Julai" days="30"/>
+        <month name="Agrolai" days="30"/>
+        <month name="September" days="30"/>
+        <month name="Octabrian" days="30"/>
+        <month name="Novembrian" days="30"/>
+        <month name="Dezonora" days="30"/>
+        <month name="Erdnacht" days="6"/>
+    </months>
+    <days>
+        <day name="Montag"/>
+        <day name="Duatag"/>
+        <day name="Tretag"/>
+        <day name="Feertag"/>
+        <day name="Faantag"/>
+        <day name="Secatag"/>
+        <day name="Heptag"/>
+        <day name="Octag"/>
+        <day name="Neutag"/>
+        <day name="Decatag"/>
+    </days>
+    <entries name="specialdays">
+        <day offset="1766320" name=""/>
+    </entries>
+    <entries name="anualdays">
+        <day offset="0" name="Neujahr">Alle Licht-GlÃ¤ubigen feiern das Ende der Erdnacht.</day>
+        <day offset="22" name="Geburtstag Tonogamas">An diesem Tag muss dem Imperator Benjaidons von jedem BÃ¼rger ein Geschenk gemacht werden.</day>
+        <day offset="44" name="Sieg Ã¼ber die Finsternis">An diesem Tag verbannte Shira Bergquell vor 1417 Jahren den HexenkÃ¶nig aus dem Land. Man feiert den Tag, indem man der Sage lauscht.</day>
+        <day offset="74" name="FrÃ¼hlingsanfang">In den Dreilanden und Sumarien feiert man an groÃŸen Tafeln.</day>
+        <day offset="93" name="Waldlandfeste"/>
+        <day offset="150" name="Tag der Myrasil"/>
+        <day offset="168" name="Zusammenschluss der Dreilande"/>
+        <day offset="194" name="Mittsommertag"/>
+        <day offset="202" name="Jahrmarkt in Tharse"/>
+        <day offset="207" name="Ritterspiele in Alvandar"/>
+        <day offset="212" name="Freitag"/>
+        <day offset="209" name="Tag der Freiheit"/>
+        <day offset="240" name="Tag der Jagd"/>
+        <day offset="269" name="Argir-Danktag"/>
+        <day offset="282" name="Walpurgisnacht"/>
+        <day offset="285" name="Befreiung Calamaars"/>
+        <day offset="292" name="FackelzÃ¼ge"/>
+        <day offset="353" name="Die brennenden Feuer"/>
+    </entries>
+    <moons>
+        <moon name="Mond" revolutionInDays="30.5" offset="0.0" color="8888ff" size="100"/>
+    </moons>
+    <mykradoriancorrectionindays>0</mykradoriancorrectionindays>
+    <monthdaymode>cut</monthdaymode>
+    <derivations>
+        <derivation name="nach dem Chaos" acronym="ndC" correctionInYears="4827"/>
+    </derivations>
+</CalendarConfig>

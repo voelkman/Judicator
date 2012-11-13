@@ -6,13 +6,19 @@
  */
 package de.voelkman.judicator.calendar.data;
 
-public class Constellation {
-	// private static final Random RANDOM = new Random();
-	public static final char REMOTE = 'R';
-	public static final char CONTERMINOUS = 'C';
-	public static final char WANING = 'W';
-	public static final char WAXING = 'X';
-	private String name = "Constellation";
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Constellation implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+	private String name = "MyConstellation";
 	private double revolutionInDays = 0;
 	private double extremeInDays = 0;
 	private double offsetInDays = 0;
@@ -23,7 +29,7 @@ public class Constellation {
 	}
 
 	public int getConstellationDegree(double daysSinceZero) {
-		int result = 0;
+		int result;
 		double transition = revolutionInDays / 2 - extremeInDays;
 		double x = (daysSinceZero + offsetInDays) % revolutionInDays;
 		if (x < extremeInDays) {
@@ -77,5 +83,13 @@ public class Constellation {
 	public void setRandomize(double randomize) {
 		this.randomize = randomize;
 	}
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
 }

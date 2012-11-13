@@ -4,11 +4,11 @@
  */
 package de.voelkman.judicator.calendar.rest;
 
+import de.voelkman.judicator.calendar.data.CalendarConfiguration;
+import java.util.LinkedList;
+import java.util.List;
 import javax.ejb.Stateless;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
 /**
@@ -66,5 +66,28 @@ public class CalendarRessourceProvider {
     public Doof getPack2() {
         Doof tm = new Doof("xhdkjdhk","zuiuiuz");
         return tm;
+    }
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("config")
+    public List<CalendarConfiguration> getCalendars(){
+        //TODO Implement this
+        
+        return new LinkedList<CalendarConfiguration>();
+    }
+
+    @POST
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("config/create")
+    public CalendarConfiguration createCalendar(){
+        return new CalendarConfiguration();
+    }
+
+    @PUT
+    @Path("config/{id}")
+    public String updateCalendar(@PathParam("id") String doodo){
+        //jdsgkjagdskf
+        return "ddd";
     }
 }

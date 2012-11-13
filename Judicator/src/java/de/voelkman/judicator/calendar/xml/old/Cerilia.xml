@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<TestMatrixTable build="27.12.2008 08:32" class="de.voelkman.rpg.arbiter.plugin.tabler.data.CalendarTable"
+	version="1.0.0">
+
+	<table name="months">
+		<array>
+			<item>Wiedergeburt</item>
+			<item>1</item>
+		</array>
+		<array>
+			<item>Sarimiere</item>
+			<item>32</item>
+		</array>
+		<array>
+			<item>Talienire</item>
+			<item>32</item>
+		</array>
+		<array>
+			<item>Roelir</item>
+			<item>32</item>
+		</array>
+		<array>
+			<item>Feuernacht</item>
+			<item>1</item>
+		</array>
+		<array>
+			<item>Haelynir</item>
+			<item>32</item>
+		</array>
+		<array>
+			<item>Anarire</item>
+			<item>32</item>
+		</array>
+		<array>
+			<item>Deismir</item>
+			<item>32</item>
+		</array>
+		<array>
+			<item>Totenehre</item>
+			<item>1</item>
+		</array>
+		<array>
+			<item>Erntenir</item>
+			<item>32</item>
+		</array>
+		<array>
+			<item>Sehnir</item>
+			<item>32</item>
+		</array>
+		<array>
+			<item>Emmanir</item>
+			<item>32</item>
+		</array>
+		<array>
+			<item>Winterbote</item>
+			<item>1</item>
+		</array>
+		<array>
+			<item>Keltier	</item>
+			<item>32</item>
+		</array>
+		<array>
+			<item>Faniele</item>
+			<item>32</item>
+		</array>
+		<array>
+			<item>Pasiphiel</item>
+			<item>32</item>
+		</array>
+	</table>
+	<array name="days">
+		<item>Firlen</item>
+		<item>Relen</item>
+		<item>Dielen</item>
+		<item>Varilen</item>
+		<item>Branlen</item>
+		<item>Barlen</item>
+		<item>Mierlen</item>
+		<item>Taelen</item>
+	</array>
+	<table name="constellation">
+		<array>
+			<item>Schattenwelt</item>
+			<item>123456</item>
+			<item>388</item>
+			<item>1222</item>
+		</array>
+	</table><table name="moons">
+		<array>
+			<item>Mond</item>
+			<item>28.4</item>
+			<item>3</item>
+			<item>8888FF</item>
+			<item>10</item>
+		</array>
+	</table>
+
+	<item name="mykradorianCorrectionInDays">109800</item>
+	<item name="monthDayMode">cut</item>
+	<table name="derivations">
+	<!-- in Years -->
+		<array><item>Healyn's Hof</item><item>HC</item><item>0</item></array>
+		<array><item>Masetianische Zeitrechnung</item><item>Ma</item><item>515</item></array>
+		<array><item>Michaelinische Zeitrechnung</item><item>MR</item><item>-973</item></array>
+	</table>
+
+</TestMatrixTable>

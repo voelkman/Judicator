@@ -1,248 +1,63 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
-<CalendarTable build="30.03.2009 22:20"
-	class="de.voelkman.rpg.arbiter.plugin.tabler.data.CalendarTable"
-	version="1.0.0">
-
-	<array name="days">
-		<item>Sul</item>
-		<item>Mol</item>
-		<item>Zol</item>
-		<item>Wir</item>
-		<item>Zor</item>
-		<item>Far</item>
-		<item>Sar</item>
-	</array>
-	
-	<table name="anualdays">
-		<array>
-			<item>1</item>
-			<item>Neujahr</item>
-			<item></item>
-		</array>
-	</table>
-	<table name="moons">
-		<array>
-			<item>Nymm</item>
-			<item>28.0</item>
-			<item>0.0</item>
-			<item>ffffaa</item>
-			<item>43</item>
-		</array>
-		<array>
-			<item>Sypheros</item>
-			<item>35.0</item>
-			<item>1.0</item>
-			<item>999999</item>
-			<item>59</item>
-		</array>
-		<array>
-			<item>Therendor</item>
-			<item>42.0</item>
-			<item>1.0</item>
-			<item>dddddd</item>
-			<item>56</item>
-		</array>
-		<array>
-			<item>Rhaan</item>
-			<item>49.0</item>
-			<item>2.0</item>
-			<item>ccccff</item>
-			<item>40</item>
-		</array>
-		<array>
-			<item>Olarune</item>
-			<item>56.0</item>
-			<item>2.0</item>
-			<item>ffdd99</item>
-			<item>46</item>
-		</array>
-		<array>
-			<item>Eyre</item>
-			<item>63.0</item>
-			<item>2.0</item>
-			<item>eeeeee</item>
-			<item>59</item>
-		</array>
-		<array>
-			<item>Vult</item>
-			<item>70.0</item>
-			<item>3.0</item>
-			<item>998888</item>
-			<item>59</item>
-		</array>
-		<array>
-			<item>Zarantyr</item>
-			<item>77.0</item>
-			<item>3.0</item>
-			<item>eeeeff</item>
-			<item>62</item>
-		</array>
-		<array>
-			<item>Aryth</item>
-			<item>84.0</item>
-			<item>3.0</item>
-			<item>ff990</item>
-			<item>50</item>
-		</array>
-		<array>
-			<item>Dravago</item>
-			<item>91.0</item>
-			<item>3.0</item>
-			<item>ffccff</item>
-			<item>100</item>
-		</array>
-		<array>
-			<item>Lharvion</item>
-			<item>98.0</item>
-			<item>4.0</item>
-			<item>dddddd</item>
-			<item>68</item>
-		</array>
-		<array>
-			<item>Barrakas</item>
-			<item>105.0</item>
-			<item>4.0</item>
-			<item>eeeeee</item>
-			<item>75</item>
-		</array>
-	</table>
-	<table name="constellation">
-		<array>
-			<item>Daanvi [Order]</item>
-			<item>134400.0</item>
-			<item>33600.0</item>
-			<item>50400.0</item>
-		</array>
-		<array>
-			<item>Dal Quor [Dreams]</item>
-			<item>1.0</item>
-			<item>1.0</item>
-			<item>0.0</item>
-		</array>
-		<array>
-			<item>Dolurrh [Dead]</item>
-			<item>33600.0</item>
-			<item>336.0</item>
-			<item>8559.0</item>
-		</array>
-		<array>
-			<item>Fernia [Fire]</item>
-			<item>1680.0</item>
-			<item>28.0</item>
-			<item>1344.0</item>
-		</array>
-		<array>
-			<item>Irian [Day]</item>
-			<item>1008.0</item>
-			<item>10.0</item>
-			<item>420.0</item>
-		</array>
-		<array>
-			<item>Kythri [Chaos]</item>
-			<item>0.0</item>
-			<item>0.0</item>
-			<item>0.0</item>
-		</array>
-		<array>
-			<item>Lamannia [Twilight]</item>
-			<item>364.0</item>
-			<item>7.0</item>
-			<item>94.0</item>
-		</array>
-		<array>
-			<item>Mabar [Night]</item>
-			<item>1680.0</item>
-			<item>3.0</item>
-			<item>422.0</item>
-		</array>
-		<array>
-			<item>Risia [Ice]</item>
-			<item>1680.0</item>
-			<item>28.0</item>
-			<item>505.0</item>
-		</array>
-		<array>
-			<item>Shavarath [Battle]</item>
-			<item>12096.0</item>
-			<item>336.0</item>
-			<item>4032.0</item>
-		</array>
-		<array>
-			<item>Syrania [Sky]</item>
-			<item>3360.0</item>
-			<item>1.0</item>
-			<item>841.0</item>
-		</array>
-		<array>
-			<item>Thelanis [Faerie]</item>
-			<item>75600.0</item>
-			<item>2352.0</item>
-			<item>20076.0</item>
-		</array>
-		<array>
-			<item>Xoriat [Madness]</item>
-			<item>2352000.0</item>
-			<item>336.0</item>
-			<item>588168.0</item>
-		</array>
-	</table>
-	<item name="mykradoriancorrectionindays">1437576</item>
-	<item name="monthdaymode">cut</item>
-	<table name="derivations">
-		<array>
-			<item>Year Khorvaire</item>
-			<item>YK</item>
-			<item>0</item>
-		</array>
-	</table>
-	<table name="months">
-		<array>
-			<item>Zarantyr</item>
-			<item>28</item>
-		</array>
-		<array>
-			<item>Olarune</item>
-			<item>28</item>
-		</array>
-		<array>
-			<item>Therendor</item>
-			<item>28</item>
-		</array>
-		<array>
-			<item>Eyre</item>
-			<item>28</item>
-		</array>
-		<array>
-			<item>Dravago</item>
-			<item>28</item>
-		</array>
-		<array>
-			<item>Nymm</item>
-			<item>28</item>
-		</array>
-		<array>
-			<item>Lharvion</item>
-			<item>28</item>
-		</array>
-		<array>
-			<item>Barrakas</item>
-			<item>28</item>
-		</array>
-		<array>
-			<item>Rhaan</item>
-			<item>28</item>
-		</array>
-		<array>
-			<item>Sypheros</item>
-			<item>28</item>
-		</array>
-		<array>
-			<item>Aryth</item>
-			<item>28</item>
-		</array>
-		<array>
-			<item>Vult</item>
-			<item>28</item>
-		</array>
-	</table>
-</CalendarTable>
+<?xml version="1.0" encoding="UTF-8"?>
+<CalendarConfig>
+    <days>
+        <day name="Sul"/>
+        <day name="Mol"/>
+        <day name="Zol"/>
+        <day name="Wir"/>
+        <day name="Zor"/>
+        <day name="Far"/>
+        <day name="Sar"/>
+    </days>
+    <entries name="anualdays">
+        <day offset="1" name="Neujahr"/>
+    </entries>
+    <moons>
+        <moon name="Nymm" revolutionInDays="28.0" offset="0.0" color="ffffaa" size="43"/>
+        <moon name="Sypheros" revolutionInDays="35.0" offset="1.0" color="999999" size="59"/>
+        <moon name="Therendor" revolutionInDays="42.0" offset="1.0" color="dddddd" size="56"/>
+        <moon name="Rhaan" revolutionInDays="49.0" offset="2.0" color="ccccff" size="40"/>
+        <moon name="Olarune" revolutionInDays="56.0" offset="2.0" color="ffdd99" size="46"/>
+        <moon name="Eyre" revolutionInDays="63.0" offset="2.0" color="eeeeee" size="59"/>
+        <moon name="Vult" revolutionInDays="70.0" offset="3.0" color="998888" size="59"/>
+        <moon name="Zarantyr" revolutionInDays="77.0" offset="3.0" color="eeeeff" size="62"/>
+        <moon name="Aryth" revolutionInDays="84.0" offset="3.0" color="ff990" size="50"/>
+        <moon name="Dravago" revolutionInDays="91.0" offset="3.0" color="ffccff" size="100"/>
+        <moon name="Lharvion" revolutionInDays="98.0" offset="4.0" color="dddddd" size="68"/>
+        <moon name="Barrakas" revolutionInDays="105.0" offset="4.0" color="eeeeee" size="75"/>
+    </moons>
+    <constellations>
+        <constellation name="Daanvi [Order]" revolutionInDays="134400.0" offset="50400.0" extreme="33600.0"/>
+        <constellation name="Dal Quor [Dreams]" revolutionInDays="1.0" offset="0.0" extreme="1.0"/>
+        <constellation name="Dolurrh [Dead]" revolutionInDays="33600.0" offset="8559.0" extreme="336.0"/>
+        <constellation name="Fernia [Fire]" revolutionInDays="1680.0" offset="1344.0" extreme="28.0"/>
+        <constellation name="Irian [Day]" revolutionInDays="1008.0" offset="420.0" extreme="10.0"/>
+        <constellation name="Kythri [Chaos]" revolutionInDays="0.0" offset="0.0" extreme="0.0"/>
+        <constellation name="Lamannia [Twilight]" revolutionInDays="364.0" offset="94.0" extreme="7.0"/>
+        <constellation name="Mabar [Night]" revolutionInDays="1680.0" offset="422.0" extreme="3.0"/>
+        <constellation name="Risia [Ice]" revolutionInDays="1680.0" offset="505.0" extreme="28.0"/>
+        <constellation name="Shavarath [Battle]" revolutionInDays="12096.0" offset="4032.0" extreme="336.0"/>
+        <constellation name="Syrania [Sky]" revolutionInDays="3360.0" offset="841.0" extreme="1.0"/>
+        <constellation name="Thelanis [Faerie]" revolutionInDays="75600.0" offset="20076.0" extreme="2352.0"/>
+        <constellation name="Xoriat [Madness]" revolutionInDays="2352000.0" offset="588168.0" extreme="336.0"/>
+    </constellations>
+    <mykradoriancorrectionindays>1437576</mykradoriancorrectionindays>
+    <monthdaymode>cut</monthdaymode>
+    <derivations>
+        <derivation name="Year Khorvaire" acronym="YK" correctionInYears="0"/>
+    </derivations>
+    <months>
+        <month name="Zarantyr" days="28"/>
+        <month name="Olarune" days="28"/>
+        <month name="Therendor" days="28"/>
+        <month name="Eyre" days="28"/>
+        <month name="Dravago" days="28"/>
+        <month name="Nymm" days="28"/>
+        <month name="Lharvion" days="28"/>
+        <month name="Barrakas" days="28"/>
+        <month name="Rhaan" days="28"/>
+        <month name="Sypheros" days="28"/>
+        <month name="Aryth" days="28"/>
+        <month name="Vult" days="28"/>
+    </months>
+</CalendarConfig>

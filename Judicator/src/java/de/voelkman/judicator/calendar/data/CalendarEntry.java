@@ -4,24 +4,43 @@
  */
 package de.voelkman.judicator.calendar.data;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 /**
  *
  * @author g8712
  */
-public class Day {
+
+@Entity
+public class CalendarEntry implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
     private int daysOfYear = 0;
-    private int repeat = -1;
+    private int annualfactor = -1;
     private int mykradorianYearCorrection = 0;
     private String name ;
     private String description;
 
-    public int getRepeat() {
-        return repeat;
+ public long getId() {
+        return id;
     }
 
-    public void setRepeat(int repeat) {
-        this.repeat = repeat;
+    public void setId(long id) {
+        this.id = id;
+    }
+    public int getAnnualfactor() {
+        return annualfactor;
+    }
+
+    public void setAnnualfactor(int annualfactor) {
+        this.annualfactor = annualfactor;
     }
 
     public int getDaysOfYear() {

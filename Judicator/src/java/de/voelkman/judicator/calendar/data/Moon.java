@@ -7,6 +7,11 @@
 package de.voelkman.judicator.calendar.data;
 
 import java.awt.Color;
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  * This Class provides any Information needed for it's location
@@ -14,14 +19,19 @@ import java.awt.Color;
  * @author g8712
  * @version 29.01.2009
  */
-public class Moon {
+
+@Entity
+public class Moon implements Serializable{
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
 
 	private Color taint = new Color(255, 255, 128);
 	private double revolutionInDays = 1;
 	private double offset = 0;
 	private String name = "Moon";
-	private int size = 15;
+	private int width = 15;
 
 	/**
 	 * Color the Moon has
@@ -86,11 +96,19 @@ public class Moon {
 	}
 
 	public int getSize() {
-		return size;
+		return width;
 	}
 
 	public void setSize(int size) {
-		this.size = size;
+		this.width = size;
 	}
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
 }

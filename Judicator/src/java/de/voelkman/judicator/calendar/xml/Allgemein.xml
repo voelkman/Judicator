@@ -1,91 +1,38 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
-<CalendarTable build="27.03.2009 16:55"
-	class="de.voelkman.rpg.arbiter.plugin.tabler.data.CalendarTable"
-	version="1.0.0">
-
-	<table name="months">
-		<array>
-			<item>Januar</item>
-			<item>31</item>
-		</array>
-		<array>
-			<item>Februar</item>
-			<item>28</item>
-		</array>
-		<array>
-			<item>März</item>
-			<item>31</item>
-		</array>
-		<array>
-			<item>April</item>
-			<item>30</item>
-		</array>
-		<array>
-			<item>Mai</item>
-			<item>31</item>
-		</array>
-		<array>
-			<item>Juni</item>
-			<item>30</item>
-		</array>
-		<array>
-			<item>Juli</item>
-			<item>31</item>
-		</array>
-		<array>
-			<item>August</item>
-			<item>31</item>
-		</array>
-		<array>
-			<item>September</item>
-			<item>30</item>
-		</array>
-		<array>
-			<item>Oktober</item>
-			<item>31</item>
-		</array>
-		<array>
-			<item>November</item>
-			<item>30</item>
-		</array>
-		<array>
-			<item>Dezember</item>
-			<item>31</item>
-		</array>
-	</table>
-	<array name="days">
-		<item>Montag</item>
-		<item>Dienstag</item>
-		<item>Mittwoch</item>
-		<item>Donnerstag</item>
-		<item>Freitag</item>
-		<item>Samstag</item>
-		<item>Sonntag</item>
-	</array>
-	<table name="specialdays">
-		<array>
-			<item>1772993</item>
-			<item>Frank the Schmitt</item>
-			<item>Is ein Geburtstagsjindl</item>
-		</array>
-	</table>
-	<table name="moons">
-		<array>
-			<item>Mond</item>
-			<item>28.4</item>
-			<item>0.0</item>
-			<item>8888ff</item>
-			<item>100</item>
-		</array>
-	</table>
-	<table name="constellation" />
-	<item name="mykradoriancorrectionindays">1039967</item>
-	<item name="monthdaymode">wrap</item>
-	<table name="derivations">
-		<array>
-			<item>Anno Domini</item>
-			<item>AD</item>
-			<item>0</item>
-		</array>
-	</table>
-</CalendarTable>
+<?xml version="1.0" encoding="UTF-8"?>
+<CalendarConfig>
+    <months>
+        <month name="Januar" days="31"/>
+        <month name="Februar" days="28"/>
+        <month name="MÃ¤rz" days="31"/>
+        <month name="April" days="30"/>
+        <month name="Mai" days="31"/>
+        <month name="Juni" days="30"/>
+        <month name="Juli" days="31"/>
+        <month name="August" days="31"/>
+        <month name="September" days="30"/>
+        <month name="Oktober" days="31"/>
+        <month name="November" days="30"/>
+        <month name="Dezember" days="31"/>
+    </months>
+    <days>
+        <day name="Montag"/>
+        <day name="Dienstag"/>
+        <day name="Mittwoch"/>
+        <day name="Donnerstag"/>
+        <day name="Freitag"/>
+        <day name="Samstag"/>
+        <day name="Sonntag"/>
+    </days>
+    <entries name="specialdays">
+        <day offset="1772993" name="Frank the Schmitt">Is ein Geburtstagsjindl</day>
+    </entries>
+    <moons>
+        <moon name="Mond" revolutionInDays="28.4" offset="0.0" color="8888ff" size="100"/>
+    </moons>
+    <constellations/>
+    <mykradoriancorrectionindays>1039967</mykradoriancorrectionindays>
+    <monthdaymode>wrap</monthdaymode>
+    <derivations>
+        <derivation name="Anno Domini" acronym="AD" correctionInYears="0"/>
+    </derivations>
+</CalendarConfig>

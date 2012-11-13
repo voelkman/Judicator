@@ -1,106 +1,45 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
-<TestMatrixTable build="27.12.2008 08:32" class="de.voelkman.rpg.arbiter.plugin.tabler.data.CalendarTable"
-	version="1.0.0">
-	<item name="mykradorianCorrectionInDays">109800</item>
-	<item name="monthDayMode">cut</item>
-	<table name="moons">
-		<array>
-			<item>Mond</item>
-			<item>28.4</item>
-			<item>3</item>
-			<item>8888FF</item>
-			<item>10</item>
-		</array>
-	</table>
-	<table name="constellation">
-		<array>
-			<item>Schattenwelt</item>
-			<item>123456</item>
-			<item>388</item>
-			<item>1222</item>
-		</array>
-	</table>
-	<table name="months">
-		<array>
-			<item>Wiedergeburt</item>
-			<item>1</item>
-		</array>
-		<array>
-			<item>Sarimiere</item>
-			<item>32</item>
-		</array>
-		<array>
-			<item>Talienire</item>
-			<item>32</item>
-		</array>
-		<array>
-			<item>Roelir</item>
-			<item>32</item>
-		</array>
-		<array>
-			<item>Feuernacht</item>
-			<item>1</item>
-		</array>
-		<array>
-			<item>Haelynir</item>
-			<item>32</item>
-		</array>
-		<array>
-			<item>Anarire</item>
-			<item>32</item>
-		</array>
-		<array>
-			<item>Deismir</item>
-			<item>32</item>
-		</array>
-		<array>
-			<item>Totenehre</item>
-			<item>1</item>
-		</array>
-		<array>
-			<item>Erntenir</item>
-			<item>32</item>
-		</array>
-		<array>
-			<item>Sehnir</item>
-			<item>32</item>
-		</array>
-		<array>
-			<item>Emmanir</item>
-			<item>32</item>
-		</array>
-		<array>
-			<item>Winterbote</item>
-			<item>1</item>
-		</array>
-		<array>
-			<item>Keltier	</item>
-			<item>32</item>
-		</array>
-		<array>
-			<item>Faniele</item>
-			<item>32</item>
-		</array>
-		<array>
-			<item>Pasiphiel</item>
-			<item>32</item>
-		</array>
-	</table>
-	<array name="days">
-		<item>Firlen</item>
-		<item>Relen</item>
-		<item>Dielen</item>
-		<item>Varilen</item>
-		<item>Branlen</item>
-		<item>Barlen</item>
-		<item>Mierlen</item>
-		<item>Taelen</item>
-	</array>
-	<table name="derivations">
-	<!-- in Years -->
-		<array><item>Healyn's Hof</item><item>HC</item><item>0</item></array>
-		<array><item>Masetianische Zeitrechnung</item><item>Ma</item><item>515</item></array>
-		<array><item>Michaelinische Zeitrechnung</item><item>MR</item><item>-973</item></array>
-	</table>
+<?xml version="1.0" encoding="UTF-8"?>
+<CalendarConfig>
+    <months>
+        <month name="Wiedergeburt" days="1"/>
+        <month name="Sarimiere" days="32"/>
+        <month name="Talienire" days="32"/>
+        <month name="Roelir" days="32"/>
+        <month name="Feuernacht" days="1"/>
+        <month name="Haelynir" days="32"/>
+        <month name="Anarire" days="32"/>
+        <month name="Deismir" days="32"/>
+        <month name="Totenehre" days="1"/>
+        <month name="Erntenir" days="32"/>
+        <month name="Sehnir" days="32"/>
+        <month name="Emmanir" days="32"/>
+        <month name="Winterbote" days="1"/>
+        <month name="Keltier" days="32"/>
+        <month name="Faniele" days="32"/>
+        <month name="Pasiphiel" days="32"/>
+    </months>
+    <days>
+        <day name="Firlen"/>
+        <day name="Relen"/>
+        <day name="Dielen"/>
+        <day name="Varilen"/>
+        <day name="Branlen"/>
+        <day name="Barlen"/>
+        <day name="Mierlen"/>
+        <day name="Taelen"/>
+    </days>
+    <constellations>
+        <constellation name="Schattenwelt" revolutionInDays="123456" offset="1222" extreme="388"/>
+    </constellations>
+    <moons>
+        <moon name="Mond" revolutionInDays="28.4" offset="3" color="8888FF" size="10"/>
+    </moons>
 
-</TestMatrixTable>
+    <mykradoriancorrectionindays>109800</mykradoriancorrectionindays>
+    <monthdaymode>cut</monthdaymode>
+    <derivations>
+        <derivation name="Healyn's Hof" acronym="HC" correctionInYears="0"/>
+        <derivation name="Masetianische Zeitrechnung" acronym="Ma" correctionInYears="515"/>
+        <derivation name="Michaelinische Zeitrechnung" acronym="MR" correctionInYears="-973"/>
+    </derivations>
+</CalendarConfig>

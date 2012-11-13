@@ -48,11 +48,15 @@
 
     <servlet>
         <servlet-name>ServletAdaptor</servlet-name>
-        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class><init-param>
+            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+            <param-value>true</param-value>
+        </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletAdaptor</servlet-name>
+        
         <url-pattern>/resources/*</url-pattern>
     </servlet-mapping>
     <session-config>
@@ -62,5 +66,5 @@
     </session-config>
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
-        </welcome-file-list>
-    </web-app>
+    </welcome-file-list>
+</web-app>
